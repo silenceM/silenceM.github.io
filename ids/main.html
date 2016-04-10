@@ -111,7 +111,6 @@
       </section>
     </div>
   </div>
-  <script src="jquery-1.11.3.min.js"></script>
   <script src="swiper.min.js"></script>
   <script src="swiper.animate.min.js"></script>
   <script>
@@ -130,29 +129,6 @@
        swiperAnimate(swiper);
      },
   })  
-   // 获取链接参数
-   var urlSource=window.location.search;
-   if(urlSource==0){
-     $("#downapp").attr("href","http://app.huazhu.com"+"?from=ids&vnohead=ITLXHDT")
-   }
-   else{
-    $("#downapp").attr("href","http://app.huazhu.com"+urlSource+"&from=ids")
-   }
-   var title = "官渠预订 福利多多";
-    var desc = "立即下载华住APP，官网最优价、体验快速预订与提前选房的乐趣哟！";
-    var acturl = "http://activitycl.huazhu.com/eventstatic/staticpage/ids?source=weixinfx&vnohead=ITLXHDT";
-    var fenxiangImg = "http://ws-www.hantinghotels.com//Content_activty/images/2016/ids1/sharewx.png";
-    var weiXin = {
-    title: title, // 分享标题
-    desc: desc, // 分享描述
-    link: acturl, // 分享链接
-    imgUrl: fenxiangImg,//朋友圈
-    Qtitle: desc, // 分享标题
-    Qlink: acturl, // 分享链接
-    QimgUrl: fenxiangImg,
-    callback: sharesuccess,
-    QcallBack: sharesuccess
-   };function sharesuccess(){};
  </script>
 </body>
 </html>
