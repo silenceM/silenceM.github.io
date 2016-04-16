@@ -26,12 +26,14 @@ var app = angular.module('myApp', []);
 app.controller('myCtrl', function($scope) {
     $scope.names = [];
     $scope.todoAdd = function() {
+        if($scope.inputname==null){
+          return;
+        }
         $scope.names.push({todoText:$scope.inputname, done:false});
         $scope.inputname = "";
     };
     $scope.toRemove = function(){
-    	var oldlist = $scope.names;
-        $scope.names=$scope.names.filter(function(x){
+       $scope.names = $scope.names.filter(function(x){
         	console.log(x.done);
         	return x.done == false;
         })
