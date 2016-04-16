@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>todoList</title>
+	<script src="http://apps.bdimg.com/libs/angular.js/1.4.6/angular.min.js"></script>
+</head>
+<style>
+	ul{
+		list-style: none;
+	}
+</style>
+<body>
+<div ng-app="myApp" ng-controller="myCtrl">
+  <label for="">请输入</label>：<input type="text" ng-model="inputname" placeholder="请输入">
+  <button ng-click="todoAdd()">确认</button>
+  <ul>
+  	 <li ng-repeat="x in names"}><input type="checkbox" ng-model="x.done">{{x.todoText}}</li>
+  </ul>
+ <button ng-click="toRemove()">删除</button>
+  </div>
+  <script>
+var app = angular.module('myApp', []);
+
+app.controller('myCtrl', function($scope) {
+    $scope.names = [];
+    $scope.todoAdd = function() {
+        $scope.names.push({todoText:$scope.inputname, done:false});
+        $scope.inputname = "";
+    };
+    $scope.toRemove = function(){
+    	var oldlist = $scope.names;
+        $scope.names=$scope.names.filter(function(x){
+        	console.log(x.done);
+        	return x.done == false;
+        })
+    }
+
+});
+
+</script>
+</body>
+</html>
