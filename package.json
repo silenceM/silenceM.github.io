@@ -1,0 +1,25 @@
+{
+  "name": "silencem",
+  "version": "0.0.1",
+  "description": "a audio",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/silenceMMM/silenceMMM.github.io.git"
+  },
+  "keywords": [
+    "audio"
+  ],
+  "author": "silence.tang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/silenceMMM/silenceMMM.github.io/issues"
+  },
+  "homepage": "https://github.com/silenceMMM/silenceMMM.github.io#readme",
+  "devDependencies": {
+    "react": "^15.3.1"
+  }
+}
