@@ -1,2 +1,1 @@
-# silenceM.github.io
-a audio for myself
+# jekyll-generate

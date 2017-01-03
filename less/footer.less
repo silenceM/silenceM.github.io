@@ -1,0 +1,118 @@
+footer {
+  padding-top: 30px;
+  padding-bottom: 60px;
+  background: @nav-bg;
+  font-size: 12px;
+  a {
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  .list-header {
+    color: #fff;
+    margin-bottom: 14px;
+    a {
+      color: #fff;
+    }
+  }
+  .list-links {
+    padding-left: 0;
+    li {
+      -webkit-font-smoothing: antialiased;
+      list-style: none;
+      margin-bottom: 4px;
+      padding:3px 0;
+    }
+    a {
+      display: block;
+      color: @nav-color;
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+  .collapse {
+    display:block;
+  }
+  .contact {
+    text-align: right;
+  }
+  .icon {
+    svg {
+      width: 30px;
+      height: 30px;
+      position: relative;
+      top:4px;
+    }
+    &+span {
+      font-size: 30px;
+      color: #989898;
+    }
+  }
+  .tel-des {
+    font-size: 14px;
+    color: #686868;
+    margin-bottom: 14px;
+  }
+  .copyright {
+    display: inline-block;
+    color: #5c5d5d;
+    margin-top: 6px;
+  }
+  .social-media {
+    svg {
+      width: 28px;
+      height: 28px;
+      margin-left: 20px;
+    }
+  }
+  @media screen and (max-width:767px){
+    padding:0;
+    .col-xs-12 {
+      width: 100%!important;
+      padding-right: 0;
+      padding-left: 0;
+    }
+    .list-header {
+      font-size:16px;
+      margin-bottom: 0;
+      position: relative;
+      display: block;
+      margin-top: -1px;
+      padding: 18px 30px;
+      border-top: 1px solid #434a57;
+      border-bottom: 1px solid #434a57;
+      color: #fff;
+      line-height: 1;
+    }
+    .list-links {
+      margin-right: 30px;
+      margin-left: 30px;
+      &.collapse {
+        display:none;
+        &.in {
+          display:block;
+        }
+      }
+      li {
+        margin-bottom: 0;
+        padding:0;
+        a {
+        display: block;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 16px;
+        &:hover {
+          color: #e4e7ed;
+        }
+        }
+      }
+    }
+    .contact {
+      text-align: center;
+    }
+  }
+  .col-sm-2 {
+    width:12%;
+  }
+}

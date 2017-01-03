@@ -1,0 +1,42 @@
+.weiqing-caseshow {
+  &-card {
+    padding-top: 84px;
+    padding-bottom: 52px;
+    border: 1px solid #f1f1f1;
+    background: #fff;
+    & h4 {
+      font-size: 16px;
+    }
+  }
+  &-des {
+    color: #b3b3b3;
+  }
+  &-hezuo {
+    color: #b3b3b3;
+    position: relative;
+    width: 60px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 18px;
+    &:before,&:after {
+      content: '';
+      position: absolute;
+      width: 5px;
+      height: 5px;
+      background: #b6b6b6;
+      border-radius: 5px;
+      top:8px;
+    }
+    &:before {
+      left: -10px;
+    }
+    &:after {
+      right: -10px;
+    }
+  }
+  &-casetype {
+    font-size: 14px;
+    font-weight: 500;
+    color: #c8202c;
+  }
+}
