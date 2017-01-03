@@ -152,16 +152,33 @@
   &-wraper {
     .wraperPadding;
   }
+  &-left {
+    border-right: 1px solid #f1f1f1;
+    padding-right: 80px;
+  }
+  &-right {
+    text-align: left;
+    padding-left: 80px;
+    address {
+      line-height: 26px;
+      margin-top: 24px;
+    }
+    span {
+      color: #999;
+    }
+  }
   &-content {
     background: #fff;
     border-radius: 4px;
     overflow: hidden;
     padding-top: 66px;
+    padding-bottom: 54px;
   }
   &-title {
     color: #ccc;
     border-bottom: 1px solid #f1f1f1;
     padding-left: 68px;
+    padding-bottom: 20px;
     h3 {
       float: left;
       margin-top: 0;
@@ -176,6 +193,8 @@
     }
   }
   &-form {
+    padding-top: 38px;
+    padding-left: 68px;
     input{
       display: inline-block;
       width: initial;
@@ -183,6 +202,10 @@
       border: 0;
       box-shadow: 0 0 0;
       border-radius: 0;
+      &:focus {
+        border-color: none;
+        box-shadow: 0 0 0;
+      }
     }
     textarea{
       height: 85px;
@@ -192,6 +215,10 @@
       border-radius: 0;
       padding: 0;
       resize: none;
+      &:focus {
+        border-color: none;
+        box-shadow: 0 0 0;
+      }
     }
     label{
       color: #a9a9a9;
