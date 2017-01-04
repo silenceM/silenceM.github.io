@@ -1234,6 +1234,12 @@ text-decoration:none .contact-display .block a:link {
   margin-left: 8px;
   color: #5377ff;
 }
+.weiqing-observe-content a {
+  color: inherit;
+}
+.weiqing-observe-content a:hover {
+  text-decoration: none;
+}
 body {
   background-color: #efefef;
 }
