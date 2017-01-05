@@ -1349,10 +1349,15 @@ div.short-line {
   margin-bottom: 76px;
   font-size: 16px;
 }
+.btn {
+  transition: all .5s;
+}
 .btn-lg {
   border-radius: 4px;
   padding: 17px 55px;
-  transition: all .5s;
+}
+.btn-default {
+  padding: 15px 24px;
 }
 .btn-blue {
   color: #ffffff;
@@ -1365,4 +1370,33 @@ div.short-line {
   color: #ffffff;
   background-color: #005891;
   border-color: #004069;
+}
+.btn-gray {
+  color: #818181;
+  background-color: #fafafa;
+  border-color: #e9e9e9;
+}
+.btn-gray:hover,
+.btn-gray:focus,
+.btn-gray:active {
+  color: #818181;
+  background-color: #cfcfcf;
+  border-color: #a9a9a9;
+}
+.btn-icon {
+  margin-right: 2px;
+}
+.btn-icon svg {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  fill: #9b9b9b;
+}
+.qrcode-btn {
+  padding: 14px;
+}
+.qrcode-btn svg {
+  width: 23px;
+  height: 23px;
+  vertical-align: middle;
 }
