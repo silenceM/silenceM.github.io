@@ -2,9 +2,10 @@
   background: #212227;
   border-radius: 0;
   margin-bottom: 0;
+  border-bottom: 1px solid #4c4c4c;
 }
 .navbar-weiqing ul {
-  padding-top: 10px;
+  margin-top: 25px;
 }
 .navbar-weiqing ul a {
   color: #999999;
@@ -15,14 +16,24 @@
   color: #f0f0f1;
   background-color: inherit;
 }
+.navbar-weiqing ul a:focus {
+  background-color: inherit;
+}
 .navbar-brand {
   height: auto;
+  padding: 26px 0;
+  margin-left: 0 !important;
+}
+@media screen (max-width: 768px) {
+  .navbar-brand {
+    padding-left: 20px;
+  }
 }
 .navbar-brand img {
-  width: 140px;
+  width: 180px;
 }
 .navbar .navbar-toggle {
-  margin-top: 15px;
+  margin-top: 33px;
 }
 .navbar .navbar-toggle .icon-bar {
   background-color: #fff;
@@ -1242,6 +1253,11 @@ text-decoration:none .contact-display .block a:link {
 }
 body {
   background-color: #efefef;
+  font-family: 'Microsoft YaHei';
+  -webkit-font-smoothing: antialiased;
+  /*chrome、safari*/
+  -moz-osx-font-smoothing: grayscale;
+  /*firefox*/
 }
 @media (min-width: 1200px) {
   .col-lg-2-5 {
@@ -1332,4 +1348,21 @@ div.short-line {
   margin-top: 20px;
   margin-bottom: 76px;
   font-size: 16px;
+}
+.btn-lg {
+  border-radius: 4px;
+  padding: 17px 55px;
+  transition: all .5s;
+}
+.btn-blue {
+  color: #ffffff;
+  background-color: #008de8;
+  border-color: #008de8;
+}
+.btn-blue:hover,
+.btn-blue:focus,
+.btn-blue:active {
+  color: #ffffff;
+  background-color: #005891;
+  border-color: #004069;
 }

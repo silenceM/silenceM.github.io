@@ -1,5 +1,6 @@
 @import "variables.less";
 @import "../node_modules/bootstrap/less/mixins.less";
+@import "../node_modules/bootstrap/less/variables.less";
 @import "nav.less";
 @import "footer.less";
 @import "index.less";
@@ -15,8 +16,23 @@
 @import "news-detail.less";
 @import "share-button.less";
 @import "news-list.less";
+.buttonColor (@color; @background; @border) {
+  color: @color;
+  background-color: @background;
+  border-color: @border;
+  &:hover,
+  &:focus,
+  &:active {
+    color: @color;
+    background-color: darken(@background, 17%);
+    border-color: darken(@border, 25%);
+  }
+}
 body {
   background-color: #efefef;
+  font-family: 'Microsoft YaHei';
+  -webkit-font-smoothing: antialiased; /*chrome、safari*/
+  -moz-osx-font-smoothing: grayscale;/*firefox*/
 }
 
 // for five item
@@ -117,4 +133,14 @@ div.short-line {
   margin-top: 20px;
   margin-bottom: 76px;
   font-size: 16px;
+}
+
+// for DIY button
+.btn-lg {
+  border-radius: 4px;
+  padding: 17px 55px;
+  transition: all .5s;
+}
+.btn-blue {
+  .buttonColor(#fff,#008de8,#008de8)
 }
