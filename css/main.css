@@ -1,8 +1,3 @@
-/*!
- * jekyll v0.0.1 ()
- * Copyright 2017 silence
- */
-
 .navbar-weiqing {
   background: #212227;
   border-radius: 0;
@@ -1355,38 +1350,86 @@ div.short-line {
   font-size: 16px;
 }
 .btn {
-  transition: all .5s;
+  transition: all 1s;
 }
 .btn-lg {
   border-radius: 4px;
   padding: 17px 55px;
 }
 .btn-default {
-  padding: 15px 24px;
+  padding: 14px 24px;
 }
 .btn-blue {
   color: #ffffff;
   background-color: #008de8;
   border-color: #008de8;
+  background-image: -webkit-linear-gradient(-90deg, #008de8 1%, #006eb5 100%);
 }
 .btn-blue:hover,
 .btn-blue:focus,
 .btn-blue:active {
   color: #ffffff;
-  background-color: #005891;
-  border-color: #004069;
+  background-color: #006eb5;
+  background-image: -webkit-linear-gradient(-90deg, #006eb5 1%, #008de8 100%);
+  border-color: #005f9c;
 }
 .btn-gray {
   color: #818181;
   background-color: #fafafa;
   border-color: #e9e9e9;
+  background-image: -webkit-linear-gradient(-90deg, #fafafa 1%, #e1e1e1 100%);
 }
 .btn-gray:hover,
 .btn-gray:focus,
 .btn-gray:active {
   color: #818181;
-  background-color: #cfcfcf;
-  border-color: #a9a9a9;
+  background-color: #e1e1e1;
+  background-image: -webkit-linear-gradient(-90deg, #e1e1e1 1%, #fafafa 100%);
+  border-color: #c3c3c3;
+}
+.btn-red {
+  color: #ffffff;
+  background-color: #df3f4a;
+  border-color: #b21f29;
+  background-image: -webkit-linear-gradient(-90deg, #df3f4a 1%, #c9222d 100%);
+}
+.btn-red:hover,
+.btn-red:focus,
+.btn-red:active {
+  color: #ffffff;
+  background-color: #c9222d;
+  background-image: -webkit-linear-gradient(-90deg, #c9222d 1%, #df3f4a 100%);
+  border-color: #71141a;
+}
+.btn-footer {
+  color: #fff;
+  border-color: #141418;
+  color: #ffffff;
+  background-color: #28292f;
+  border-color: #28292f;
+  background-image: -webkit-linear-gradient(-90deg, #28292f 1%, #111113 100%);
+}
+.btn-footer:hover,
+.btn-footer:focus,
+.btn-footer:active {
+  color: #ffffff;
+  background-color: #111113;
+  background-image: -webkit-linear-gradient(-90deg, #111113 1%, #28292f 100%);
+  border-color: #050506;
+}
+.btn-form {
+  color: #fff;
+  background-color: #0079dd;
+  border-radius: 26px;
+  padding: 12px 34px;
+}
+.btn-form:hover {
+  color: #fff;
+  box-shadow: 0px 15px 13px 0px #0079dd;
+}
+.btn-form:focus {
+  color: #fff;
+  outline: none;
 }
 .btn-icon {
   margin-right: 2px;
@@ -1398,7 +1441,7 @@ div.short-line {
   fill: #9b9b9b;
 }
 .qrcode-btn {
-  padding: 14px;
+  padding: 13px;
 }
 .qrcode-btn svg {
   width: 23px;
