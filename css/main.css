@@ -1,8 +1,3 @@
-/*!
- * jekyll v0.0.1 ()
- * Copyright 2017 silence
- */
-
 .navbar-weiqing {
   background: #212227;
   border-radius: 0;
@@ -215,7 +210,16 @@ footer .col-sm-2 {
   border: 1px solid #dcdcdc;
   width: 33.33%;
   float: left;
-  padding: 80px 0;
+  min-height: 300px;
+  display: table;
+}
+.serve-card-wrap:hover .serve-card-description {
+  height: 60px;
+  opacity: 1;
+}
+.serve-card-content {
+  display: table-cell;
+  vertical-align: middle;
 }
 .serve-card-img {
   display: block;
@@ -224,6 +228,10 @@ footer .col-sm-2 {
 }
 .serve-card-description {
   padding: 0 16%;
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: all 0.5s linear ;
 }
 .weiqing-caseshow-wraper {
   padding-top: 110px;
@@ -253,6 +261,12 @@ footer .col-sm-2 {
   border: 1px solid #e5e5e5;
   border-radius: 4px;
   overflow: hidden;
+  position: relative;
+  transition: all 1s;
+}
+.xueyuan-card-wraper:hover {
+  box-shadow: 0px 36px 21px 0px #050001;
+  transform: translate3d(0, -20px, 0);
 }
 .xueyuan-card-header {
   background: #fafafa;
@@ -280,6 +294,9 @@ footer .col-sm-2 {
 .xueyuan-card-content ul li:last-child {
   border-bottom: none;
 }
+.xueyuan-card-content ul li:hover {
+  color: #ff5f5f;
+}
 .xueyuan-card-content ul li:before {
   content: "";
   position: absolute;
@@ -299,6 +316,11 @@ footer .col-sm-2 {
   margin-bottom: 10px;
   padding-left: 10px;
   padding-right: 0;
+  position: relative;
+  transition: all 1s;
+}
+.weiqing-partner-wraper img:hover {
+  transform: translate3d(0, -24px, 0);
 }
 .weiqing-contact-wraper {
   padding-top: 110px;
@@ -382,6 +404,128 @@ footer .col-sm-2 {
 }
 .weiqing-contact-form .form-group:hover {
   border-color: #0079dd;
+}
+@-webkit-keyframes fadeInUp {
+  from {
+    opacity: 0;
+    height: 0;
+  }
+  to {
+    opacity: 1;
+    height: 60px;
+  }
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    height: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+  to {
+    opacity: 1;
+    height: 60px;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+@-webkit-keyframes fadeOutDown {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+}
+@keyframes fadeOutDown {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+}
+@-webkit-keyframes slideInUp {
+  from {
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    visibility: visible;
+  }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes slideInUp {
+  from {
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    visibility: visible;
+  }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+@-webkit-keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+@-webkit-keyframes fadeOutUp {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+}
+@keyframes fadeOutUp {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+}
+.fadeOutUp {
+  -webkit-animation-name: fadeOutUp;
+  animation-name: fadeOutUp;
+}
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+}
+.slideInUp {
+  -webkit-animation-name: slideInUp;
+  animation-name: slideInUp;
 }
 .service {
   background-color: #fff;
@@ -1051,13 +1195,31 @@ text-decoration:none .contact-display .block a:link {
 }
 .weiqing-caseshow-card {
   text-align: center;
-  padding-top: 84px;
-  padding-bottom: 52px;
+  display: table;
   border: 1px solid #f1f1f1;
   background: #fff;
+  min-height: 406px;
+  transition: all 1s;
 }
 .weiqing-caseshow-card h4 {
   font-size: 16px;
+}
+.weiqing-caseshow-card:hover .weiqing-caseshow-hezuo {
+  -webkit-animation-name: fadeOutUp;
+  animation-name: fadeOutUp;
+  margin-top: 0;
+  margin-bottom: 0;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+.weiqing-caseshow-card:hover button {
+  height: 0;
+}
+.weiqing-caseshow-cardcontent {
+  display: table-cell;
+  vertical-align: middle;
 }
 .weiqing-caseshow-des {
   color: #b3b3b3;
@@ -1069,6 +1231,7 @@ text-decoration:none .contact-display .block a:link {
   margin: 0 auto;
   margin-top: 20px;
   margin-bottom: 18px;
+  transition: all 1s;
 }
 .weiqing-caseshow-hezuo:before,
 .weiqing-caseshow-hezuo:after {
