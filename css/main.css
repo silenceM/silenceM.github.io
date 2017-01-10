@@ -212,6 +212,10 @@ footer .col-sm-2 {
   float: left;
   min-height: 300px;
   display: table;
+  transition: all 0.5s linear ;
+}
+.serve-card-wrap:hover {
+  box-shadow: #ededed 0px 0px 40px inset;
 }
 .serve-card-wrap:hover .serve-card-description {
   height: 60px;
@@ -265,7 +269,7 @@ footer .col-sm-2 {
   transition: all 1s;
 }
 .xueyuan-card-wraper:hover {
-  box-shadow: 0px 36px 21px 0px #050001;
+  box-shadow: 0 10px 15px #dbdbdb;
   transform: translate3d(0, -20px, 0);
 }
 .xueyuan-card-header {
