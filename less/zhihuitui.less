@@ -53,12 +53,34 @@
       border-left: 1px solid #dcdcdc;
       border-right: 1px solid #dcdcdc;
       padding: 30px 10px;
+      height: 226px;
+      transition: all 1s;
+      &:hover {
+        box-shadow: 0 0 25px #dcdcdc inset;
+        .short-line {
+          height: 0;
+          margin-top: 0;
+          margin-bottom: 0;
+          opacity: 0;
+        }
+        .service-advantage-title {
+          margin-top: 10px;
+          margin-bottom: 10px;
+        }
+        .service-advantage-des {
+          height: 58px;
+          opacity: 1;
+        }
+      }
       img {
         height: 70px;
       }
-      &:hover {
-        box-shadow: 0 0 25px #dcdcdc inset;
-      }
+    }
+    &-des {
+      height: 0;
+      overflow: hidden;
+      opacity: 0;
+      transition: all 1s;
     }
   }
   &-fees {
@@ -71,5 +93,11 @@
   }
   &-way {
     text-align: center;
+  }
+}
+.scale-img {
+  transition: all 1s;
+  &:hover {
+    transform: scale(1.2);
   }
 }

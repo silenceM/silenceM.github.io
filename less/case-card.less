@@ -1,29 +1,26 @@
 .weiqing-caseshow {
   &-card {
     text-align: center;
-    display: table;
     border: 1px solid #f1f1f1;
     background: #fff;
-    min-height: 406px;
+    padding-top: 85px;
+    padding-bottom: 55px;
+    height: 406px;
     & h4 {
       font-size: 16px;
     }
     transition: all 1s;
     &:hover {
       .weiqing-caseshow-hezuo {
-        .fadeOutUp();
-        margin-top: 0;
-        margin-bottom: 0;
-        .animated();
-      }
-      button {
+        opacity: 0;
         height: 0;
+        overflow: hidden;
+      }
+      .caseshow-button-wraper {
+        height: auto;
+        opacity: 1;
       }
     }
-  }
-  &-cardcontent {
-    display: table-cell;
-    vertical-align: middle;
   }
   &-des {
     color: #b3b3b3;
@@ -33,8 +30,8 @@
     position: relative;
     width: 60px;
     margin: 0 auto;
-    margin-top: 20px;
-    margin-bottom: 18px;
+    height: 40px;
+    line-height: 40px;
     transition: all 1s;
     &:before,&:after {
       content: '';
@@ -43,7 +40,8 @@
       height: 5px;
       background: #b6b6b6;
       border-radius: 5px;
-      top:8px;
+      top: 50%;
+      transform: translate(0, -50%);
     }
     &:before {
       left: -10px;
@@ -58,4 +56,10 @@
     color: #c8202c;
     margin-bottom: 18px;
   }
+}
+.caseshow-button-wraper {
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: all 1s;
 }

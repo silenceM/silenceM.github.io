@@ -1,8 +1,3 @@
-/*!
- * jekyll v0.0.1 ()
- * Copyright 2017 silence
- */
-
 .navbar-weiqing {
   background: #212227;
   border-radius: 0;
@@ -105,6 +100,10 @@ footer .social-media svg {
   width: 28px;
   height: 28px;
   margin-left: 20px;
+  cursor: pointer;
+}
+footer .social-media svg:hover path {
+  fill: #0079dd;
 }
 @media screen and (max-width: 767px) {
   footer {
@@ -417,74 +416,20 @@ footer .col-sm-2 {
 @-webkit-keyframes fadeInUp {
   from {
     opacity: 0;
-    height: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
   }
   to {
     opacity: 1;
-    height: 60px;
+    -webkit-transform: none;
+    transform: none;
   }
 }
 @keyframes fadeInUp {
   from {
     opacity: 0;
-    height: 0;
     -webkit-transform: translate3d(0, 100%, 0);
     transform: translate3d(0, 100%, 0);
-  }
-  to {
-    opacity: 1;
-    height: 60px;
-    -webkit-transform: none;
-    transform: none;
-  }
-}
-@-webkit-keyframes fadeOutDown {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-    -webkit-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0);
-  }
-}
-@keyframes fadeOutDown {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-    -webkit-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0);
-  }
-}
-@-webkit-keyframes slideInUp {
-  from {
-    -webkit-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0);
-    visibility: visible;
-  }
-  to {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-}
-@keyframes slideInUp {
-  from {
-    -webkit-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0);
-    visibility: visible;
-  }
-  to {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-}
-@-webkit-keyframes fadeInDown {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(0, -100%, 0);
-    transform: translate3d(0, -100%, 0);
   }
   to {
     opacity: 1;
@@ -492,49 +437,35 @@ footer .col-sm-2 {
     transform: none;
   }
 }
-@keyframes fadeInDown {
+@-webkit-keyframes fadeIn {
   from {
     opacity: 0;
-    -webkit-transform: translate3d(0, -100%, 0);
-    transform: translate3d(0, -100%, 0);
   }
   to {
     opacity: 1;
-    -webkit-transform: none;
-    transform: none;
   }
 }
-@-webkit-keyframes fadeOutUp {
+@keyframes fadeIn {
   from {
-    opacity: 1;
+    opacity: 0;
   }
   to {
-    opacity: 0;
-    -webkit-transform: translate3d(0, -100%, 0);
-    transform: translate3d(0, -100%, 0);
-  }
-}
-@keyframes fadeOutUp {
-  from {
     opacity: 1;
   }
-  to {
-    opacity: 0;
-    -webkit-transform: translate3d(0, -100%, 0);
-    transform: translate3d(0, -100%, 0);
-  }
 }
-.fadeOutUp {
-  -webkit-animation-name: fadeOutUp;
-  animation-name: fadeOutUp;
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
 }
-.fadeInDown {
-  -webkit-animation-name: fadeInDown;
-  animation-name: fadeInDown;
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
 }
-.slideInUp {
-  -webkit-animation-name: slideInUp;
-  animation-name: slideInUp;
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
 }
 .service {
   background-color: #fff;
@@ -593,12 +524,34 @@ footer .col-sm-2 {
   border-left: 1px solid #dcdcdc;
   border-right: 1px solid #dcdcdc;
   padding: 30px 10px;
+  height: 226px;
+  transition: all 1s;
+}
+.service-advantage-icon:hover {
+  box-shadow: 0 0 25px #dcdcdc inset;
+}
+.service-advantage-icon:hover .short-line {
+  height: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  opacity: 0;
+}
+.service-advantage-icon:hover .service-advantage-title {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.service-advantage-icon:hover .service-advantage-des {
+  height: 58px;
+  opacity: 1;
 }
 .service-advantage-icon img {
   height: 70px;
 }
-.service-advantage-icon:hover {
-  box-shadow: 0 0 25px #dcdcdc inset;
+.service-advantage-des {
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 1s;
 }
 .service-fees {
   padding: 100px 50px;
@@ -610,6 +563,12 @@ footer .col-sm-2 {
 }
 .service-way {
   text-align: center;
+}
+.scale-img {
+  transition: all 1s;
+}
+.scale-img:hover {
+  transform: scale(1.2);
 }
 .anli-detail {
   padding: 40px;
@@ -1204,31 +1163,24 @@ text-decoration:none .contact-display .block a:link {
 }
 .weiqing-caseshow-card {
   text-align: center;
-  display: table;
   border: 1px solid #f1f1f1;
   background: #fff;
-  min-height: 406px;
+  padding-top: 85px;
+  padding-bottom: 55px;
+  height: 406px;
   transition: all 1s;
 }
 .weiqing-caseshow-card h4 {
   font-size: 16px;
 }
 .weiqing-caseshow-card:hover .weiqing-caseshow-hezuo {
-  -webkit-animation-name: fadeOutUp;
-  animation-name: fadeOutUp;
-  margin-top: 0;
-  margin-bottom: 0;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-}
-.weiqing-caseshow-card:hover button {
+  opacity: 0;
   height: 0;
+  overflow: hidden;
 }
-.weiqing-caseshow-cardcontent {
-  display: table-cell;
-  vertical-align: middle;
+.weiqing-caseshow-card:hover .caseshow-button-wraper {
+  height: auto;
+  opacity: 1;
 }
 .weiqing-caseshow-des {
   color: #b3b3b3;
@@ -1238,8 +1190,8 @@ text-decoration:none .contact-display .block a:link {
   position: relative;
   width: 60px;
   margin: 0 auto;
-  margin-top: 20px;
-  margin-bottom: 18px;
+  height: 40px;
+  line-height: 40px;
   transition: all 1s;
 }
 .weiqing-caseshow-hezuo:before,
@@ -1250,7 +1202,8 @@ text-decoration:none .contact-display .block a:link {
   height: 5px;
   background: #b6b6b6;
   border-radius: 5px;
-  top: 8px;
+  top: 50%;
+  transform: translate(0, -50%);
 }
 .weiqing-caseshow-hezuo:before {
   left: -10px;
@@ -1263,6 +1216,12 @@ text-decoration:none .contact-display .block a:link {
   font-weight: 500;
   color: #c8202c;
   margin-bottom: 18px;
+}
+.caseshow-button-wraper {
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: all 1s;
 }
 .weiqing-casepage-wraper {
   margin-bottom: 50px;
@@ -1476,8 +1435,9 @@ div.short-line {
   height: 5px;
   margin: 0 auto;
   border-radius: 10px;
-  margin-top: 15px;
-  margin-bottom: 15px;
+  margin-top: 42px;
+  margin-bottom: 20px;
+  transition: all 1s;
 }
 .service-nav {
   margin-top: 20px;
