@@ -1,3 +1,8 @@
+/*!
+ * jekyll v0.0.1 ()
+ * Copyright 2017 silence
+ */
+
 .navbar-weiqing {
   background: #212227;
   border-radius: 0;
@@ -1257,6 +1262,7 @@ text-decoration:none .contact-display .block a:link {
   font-size: 14px;
   font-weight: 500;
   color: #c8202c;
+  margin-bottom: 18px;
 }
 .weiqing-casepage-wraper {
   margin-bottom: 50px;
@@ -1611,6 +1617,20 @@ div.short-line {
   height: 20px;
   vertical-align: middle;
   fill: #9b9b9b;
+}
+.btn-card {
+  font-size: 12px;
+  padding: 8px 22px;
+  color: #646464;
+  background-color: #fefefe;
+  border-color: #e4e4e4;
+}
+.btn-card:hover,
+.btn-card:focus,
+.btn-card:active {
+  color: #646464;
+  background-color: #e5e5e5;
+  border-color: #bebebe;
 }
 .qrcode-btn {
   padding: 13px;

@@ -1,13 +1,29 @@
 .weiqing-caseshow {
   &-card {
     text-align: center;
-    padding-top: 84px;
-    padding-bottom: 52px;
+    display: table;
     border: 1px solid #f1f1f1;
     background: #fff;
+    min-height: 406px;
     & h4 {
       font-size: 16px;
     }
+    transition: all 1s;
+    &:hover {
+      .weiqing-caseshow-hezuo {
+        .fadeOutUp();
+        margin-top: 0;
+        margin-bottom: 0;
+        .animated();
+      }
+      button {
+        height: 0;
+      }
+    }
+  }
+  &-cardcontent {
+    display: table-cell;
+    vertical-align: middle;
   }
   &-des {
     color: #b3b3b3;
@@ -40,5 +56,6 @@
     font-size: 14px;
     font-weight: 500;
     color: #c8202c;
+    margin-bottom: 18px;
   }
 }
