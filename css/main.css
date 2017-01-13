@@ -216,7 +216,7 @@ footer .col-sm-2 {
   float: left;
   min-height: 300px;
   display: table;
-  transition: all 0.5s linear ;
+  transition: all 1s linear ;
 }
 .serve-card-wrap:hover {
   box-shadow: #ededed 0px 0px 40px inset;
@@ -239,7 +239,7 @@ footer .col-sm-2 {
   height: 0;
   opacity: 0;
   overflow: hidden;
-  transition: all 0.5s linear ;
+  transition: all 1s linear ;
 }
 .weiqing-caseshow-wraper {
   padding-top: 110px;
@@ -1387,6 +1387,83 @@ text-decoration:none .contact-display .block a:link {
 }
 .weiqing-observe-content a:hover {
   text-decoration: none;
+}
+.mailLink {
+  display: inline-block !important;
+  color: #0079dd!important;
+  padding-left: 0!important;
+  padding-top: 4px!important;
+}
+.weiqing-jobs-wraper {
+  text-align: center;
+  border: 1px solid #dcdcdc;
+  border-radius: 4px;
+  background: #fff;
+  overflow: hidden;
+  padding-top: 118px;
+  padding-bottom: 126px;
+  margin-bottom: 30px;
+}
+.weiqing-jobs-wraper h1 {
+  font-weight: lighter;
+  font-size: 48px;
+}
+.weiqing-jobs-wraper p {
+  font-size: 16px;
+  margin-top: 34px;
+  margin-bottom: 90px;
+}
+.weiqing-jobs-list {
+  border-radius: 4px;
+  overflow: hidden;
+  border: 1px solid #dcdcdc;
+}
+.weiqing-jobs-title {
+  padding-left: 46px;
+  padding-right: 46px;
+  border-bottom: 1px solid #dcdcdc;
+  background-image: -moz-linear-gradient(-90deg, #fafafa 0%, #ededed 99%);
+  background-image: -webkit-linear-gradient(-90deg, #fafafa 0%, #ededed 99%);
+  background-image: -ms-linear-gradient(-90deg, #fafafa 0%, #ededed 99%);
+  box-shadow: 0px 0px 2px 0px #dcdcdc;
+}
+.weiqing-jobs-title h4 {
+  margin-top: 14px;
+}
+.weiqing-jobs-title .drop-btn {
+  padding: 6px 12px;
+  margin-top: 5px;
+}
+.weiqing-jobs-detail ul {
+  margin-bottom: 0;
+  padding-left: 46px;
+  background: #f2f2f2;
+}
+.weiqing-jobs-detail ul li {
+  list-style: none;
+  float: left;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background: #f2f2f2;
+  color: #8f8f8f;
+  font-weight: bold;
+  border-right: 1px solid #dadada;
+  text-align: center;
+  width: 20%;
+}
+.weiqing-jobs-detail ul li:nth-child(1) {
+  width: 40%;
+  text-align: left;
+}
+.weiqing-jobs-detail ul li:nth-child(4) {
+  border: none;
+}
+.weiqing-jobs-panel ul {
+  background: #f2f2f2;
+}
+.weiqing-jobs-panel li {
+  border-right: none !important;
+  border-bottom: 1px solid #eaeaea !important;
 }
 body {
   background-color: #efefef;
