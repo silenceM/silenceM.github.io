@@ -1182,6 +1182,12 @@ text-decoration:none .contact-display .block a:link {
   height: auto;
   opacity: 1;
 }
+.weiqing-caseshow-card:hover .weiqing-caseshow-class {
+  opacity: 0;
+  height: 0;
+  margin-bottom: 0;
+  overflow: hidden;
+}
 .weiqing-caseshow-des {
   color: #b3b3b3;
 }
@@ -1216,6 +1222,18 @@ text-decoration:none .contact-display .block a:link {
   font-weight: 500;
   color: #c8202c;
   margin-bottom: 18px;
+}
+.weiqing-caseshow-class {
+  display: inline-block;
+  color: #c8202c;
+  font-size: 12px;
+  border: 1px solid #c8202c;
+  height: 28px;
+  line-height: 28px;
+  padding: 0 12px;
+  border-radius: 18px;
+  margin-bottom: 12px;
+  transition: all 1s;
 }
 .caseshow-button-wraper {
   height: 0;
