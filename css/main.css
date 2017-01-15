@@ -1,8 +1,3 @@
-/*!
- * jekyll v0.0.1 ()
- * Copyright 2017 silence
- */
-
 .navbar-weiqing {
   background: #212227;
   border-radius: 0;
@@ -1439,12 +1434,13 @@ text-decoration:none .contact-display .block a:link {
   padding: 6px 12px;
   margin-top: 5px;
 }
-.weiqing-jobs-detail ul {
+.weiqing-jobs-column {
   margin-bottom: 0;
   padding-left: 46px;
   background: #f2f2f2;
+  border-bottom: 1px solid #ececec;
 }
-.weiqing-jobs-detail ul li {
+.weiqing-jobs-column li {
   list-style: none;
   float: left;
   padding-top: 10px;
@@ -1456,19 +1452,84 @@ text-decoration:none .contact-display .block a:link {
   text-align: center;
   width: 20%;
 }
-.weiqing-jobs-detail ul li:nth-child(1) {
+.weiqing-jobs-column li:nth-child(1) {
   width: 40%;
   text-align: left;
 }
-.weiqing-jobs-detail ul li:nth-child(4) {
+.weiqing-jobs-column li:nth-child(4) {
   border: none;
 }
-.weiqing-jobs-panel ul {
-  background: #f2f2f2;
+.weiqing-jobs-panelhead {
+  border-bottom: 1px solid #eaeaea;
 }
-.weiqing-jobs-panel li {
-  border-right: none !important;
-  border-bottom: 1px solid #eaeaea !important;
+.weiqing-jobs-panelhead ul {
+  padding-left: 46px;
+  color: #8f8f8f;
+  background: #fafafa;
+  margin-bottom: 0;
+  height: 78px;
+  line-height: 78px;
+  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.08);
+  font-weight: 500;
+}
+.weiqing-jobs-panelhead ul:before,
+.weiqing-jobs-panelhead ul:after {
+  content: " ";
+  display: table;
+}
+.weiqing-jobs-panelhead ul:after {
+  clear: both;
+}
+.weiqing-jobs-panelhead ul li {
+  list-style: none;
+  float: left;
+  width: 20%;
+  text-align: center;
+}
+.weiqing-jobs-panelhead ul li:nth-child(1) {
+  width: 40%;
+  text-align: left;
+}
+.weiqing-jobs-panelhead .collapsed {
+  background: #fff;
+  box-shadow: none;
+}
+.weiqing-jobs-panelhead .collapsed .weiqing-jobs-up {
+  display: none;
+}
+.weiqing-jobs-newTag {
+  color: #6291f3;
+  font-weight: 700;
+  background: #e0e9fd;
+  border: 1px solid #8daff6;
+  border-radius: 16px;
+  margin-left: 10px;
+  margin-right: 14px;
+  padding: 4px;
+}
+.weiqing-jobs-up svg {
+  width: 14px;
+  height: 14px;
+  vertical-align: middle;
+}
+.weiqing-jobs-panelbody {
+  background: #f5f5f5;
+  padding: 60px 46px;
+}
+.weiqing-jobs-panelbody ul {
+  list-style-type: decimal;
+  padding-left: 16px;
+  color: #999999;
+  line-height: 28px;
+}
+.weiqing-jobs-destitle {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 22px;
+}
+.weiqing-jobs-salary {
+  color: #999;
+  margin-bottom: 30px;
 }
 body {
   background-color: #efefef;
@@ -1673,6 +1734,20 @@ div.short-line {
   color: #646464;
   background-color: #e5e5e5;
   border-color: #bebebe;
+}
+.btn-jobs {
+  color: #ffffff;
+  background-color: #6b95ee;
+  border-color: #5275bc;
+  background-image: -webkit-linear-gradient(-90deg, #6b95ee 1%, #3d74e9 100%);
+}
+.btn-jobs:hover,
+.btn-jobs:focus,
+.btn-jobs:active {
+  color: #ffffff;
+  background-color: #3d74e9;
+  background-image: -webkit-linear-gradient(-90deg, #3d74e9 1%, #6b95ee 100%);
+  border-color: #36528b;
 }
 .qrcode-btn {
   padding: 13px;
