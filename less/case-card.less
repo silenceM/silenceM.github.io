@@ -11,6 +11,7 @@
     }
     transition: all 1s;
     &:hover {
+      box-shadow: rgb(237, 237, 237) 0 0 30px inset;
       .weiqing-caseshow-hezuo {
         opacity: 0;
         height: 0;
@@ -34,27 +35,11 @@
   &-hezuo {
     color: #b3b3b3;
     position: relative;
-    width: 60px;
+    width: 100px;
     margin: 0 auto;
     height: 40px;
     line-height: 40px;
-    transition: all 1s;
-    &:before,&:after {
-      content: '';
-      position: absolute;
-      width: 5px;
-      height: 5px;
-      background: #b6b6b6;
-      border-radius: 5px;
-      top: 50%;
-      transform: translate(0, -50%);
-    }
-    &:before {
-      left: -10px;
-    }
-    &:after {
-      right: -10px;
-    }
+    transition: all 0.5s ease;
   }
   &-casetype {
     font-size: 14px;
