@@ -11,18 +11,5 @@ $(document).ready(function(){
         $(this).find('img').attr("src", src);
       });
   });
-  $('.weiqing-caseshow-card').each(function () {
-    $(this).hover(function () {
-      setTimeout(function () {
-        $('.case-title').addClass('animated fadeInUp')
-        $('.case-description').addClass('animated fadeInUp')
-      }, 200)
-    },
-    function () {
-      $('.case-title').removeClass('animated fadeInUp')
-      $('.case-description').removeClass('animated fadeInUp')
-    }
-    )
-  })
   new WOW().init();
 });
