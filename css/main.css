@@ -511,48 +511,6 @@ footer .col-sm-2 {
 .service-how {
   padding: 100px 50px;
 }
-.service-advantage {
-  padding: 100px 50px;
-}
-.service-advantage-description {
-  max-width: 750px;
-  margin: 0 auto;
-}
-.service-advantage-icon {
-  display: inline-block;
-  text-align: center;
-  border-left: 1px solid #dcdcdc;
-  border-right: 1px solid #dcdcdc;
-  padding: 30px 10px;
-  height: 226px;
-  transition: all 1s;
-}
-.service-advantage-icon:hover {
-  box-shadow: 0 0 25px #dcdcdc inset;
-}
-.service-advantage-icon:hover .short-line {
-  height: 0;
-  margin-top: 0;
-  margin-bottom: 0;
-  opacity: 0;
-}
-.service-advantage-icon:hover .service-advantage-title {
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-.service-advantage-icon:hover .service-advantage-des {
-  height: 58px;
-  opacity: 1;
-}
-.service-advantage-icon img {
-  height: 70px;
-}
-.service-advantage-des {
-  height: 0;
-  overflow: hidden;
-  opacity: 0;
-  transition: all 1s;
-}
 .service-fees {
   padding: 100px 50px;
 }
@@ -563,12 +521,6 @@ footer .col-sm-2 {
 }
 .service-way {
   text-align: center;
-}
-.scale-img {
-  transition: all 1s;
-}
-.scale-img:hover {
-  transform: scale(1.2);
 }
 .anli-detail {
   padding: 40px;
@@ -842,7 +794,6 @@ footer .col-sm-2 {
 }
 .about-display .block p {
   color: #999;
-  text-indent: 2em;
   line-height: 2em;
   padding-bottom: 20px;
 }
@@ -861,17 +812,6 @@ footer .col-sm-2 {
   margin-top: 10px;
   color: #999;
   line-height: 2em;
-}
-.about-display .block-three > div {
-  height: 250px;
-  padding: 40px 0;
-  border-left: 1px solid #dcdcdc;
-}
-.about-display .block-three > div:last-child {
-  border-right: 1px solid #dcdcdc;
-}
-.about-display .block-three > div:hover {
-  box-shadow: 0 0 25px #dcdcdc inset;
 }
 .marketWeb {
   background-color: #fff;
@@ -1435,6 +1375,7 @@ text-decoration:none .contact-display .block a:link {
   border-radius: 4px;
   overflow: hidden;
   border: 1px solid #dcdcdc;
+  margin-bottom: 50px;
 }
 .weiqing-jobs-title {
   padding-left: 46px;
@@ -1447,10 +1388,6 @@ text-decoration:none .contact-display .block a:link {
 }
 .weiqing-jobs-title h4 {
   margin-top: 14px;
-}
-.weiqing-jobs-title .drop-btn {
-  padding: 6px 12px;
-  margin-top: 5px;
 }
 .weiqing-jobs-column {
   margin-bottom: 0;
@@ -1773,5 +1710,78 @@ div.short-line {
 .qrcode-btn svg {
   width: 23px;
   height: 23px;
+  margin-right: 2px;
   vertical-align: middle;
+}
+.nav2-qq svg {
+  width: 14px;
+  height: 14px;
+  vertical-align: middle;
+  position: relative;
+  top: -1px;
+  margin-right: 2px;
+  fill: #9b9b9b;
+}
+.nav2-qq:hover,
+.nav2-qq:active,
+.nav2-qq:visited {
+  color: #fff;
+  background: #5a84de !important;
+}
+.nav2-qq:hover svg,
+.nav2-qq:active svg,
+.nav2-qq:visited svg {
+  fill: #fff;
+}
+.scale-img {
+  transition: all 1s;
+}
+.scale-img:hover {
+  transform: scale(1.2);
+}
+.service-advantage {
+  padding: 100px 50px;
+}
+.service-advantage-description {
+  max-width: 750px;
+  margin: 0 auto;
+}
+.service-advantage-icon {
+  display: inline-block;
+  text-align: center;
+  border-left: 1px solid #dcdcdc;
+  border-right: 1px solid #dcdcdc;
+  padding: 30px 10px;
+  height: 226px;
+  transition: all 1s;
+}
+.service-advantage-icon:hover {
+  box-shadow: 0 0 25px #dcdcdc inset;
+}
+.service-advantage-icon:hover .short-line {
+  height: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  opacity: 0;
+}
+.service-advantage-icon:hover .service-advantage-title {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.service-advantage-icon:hover .service-advantage-des {
+  height: 58px;
+  opacity: 1;
+}
+.service-advantage-icon img {
+  height: 70px;
+}
+.service-advantage-des {
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 1s;
+}
+.drop-btn {
+  padding: 6px 12px;
+  margin-top: 5px;
 }
