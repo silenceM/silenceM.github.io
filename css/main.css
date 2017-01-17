@@ -1,3 +1,8 @@
+/*!
+ * jekyll v0.0.1 ()
+ * Copyright 2017 silence
+ */
+
 .navbar-weiqing {
   background: #212227;
   border-radius: 0;
@@ -160,6 +165,9 @@ footer .social-media svg:hover path {
 footer .col-sm-2 {
   width: 12%;
 }
+footer hr {
+  border-color: #757575;
+}
 .weiqing-main {
   text-align: center;
 }
@@ -190,6 +198,10 @@ footer .col-sm-2 {
   background-position: right top;
   background-size: 700px;
   background-repeat: no-repeat;
+}
+.weiqing-banner-left {
+  padding-left: 0;
+  padding-right: 0;
 }
 .weiqing-serve-wraper {
   background: #fff;
