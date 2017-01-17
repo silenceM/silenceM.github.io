@@ -1,8 +1,3 @@
-/*!
- * jekyll v0.0.1 ()
- * Copyright 2017 silence
- */
-
 .navbar-weiqing {
   background: #212227;
   border-radius: 0;
@@ -164,9 +159,13 @@ footer .social-media svg:hover path {
 }
 footer .col-sm-2 {
   width: 12%;
+  padding: 0;
 }
 footer hr {
   border-color: #757575;
+}
+footer .footer-bottom {
+  padding: 0;
 }
 .weiqing-main {
   text-align: center;
@@ -543,6 +542,7 @@ footer hr {
 }
 .anli-detail {
   padding: 40px;
+  padding-top: 0;
 }
 .anli-detail p {
   color: #646464;
@@ -741,6 +741,7 @@ footer hr {
 }
 .about {
   padding: 40px;
+  padding-top: 0;
 }
 .about hr {
   height: 1px;
@@ -896,6 +897,7 @@ footer hr {
 }
 .pay {
   padding: 40px;
+  padding-top: 0;
 }
 .pay-nav {
   padding-bottom: 20px;
@@ -991,6 +993,7 @@ text-decoration:none .pay-display .introduce a:link {
 }
 .contact {
   padding: 40px;
+  padding-top: 0;
 }
 .contact-nav {
   padding-bottom: 20px;
@@ -1551,6 +1554,7 @@ div.short-line {
 }
 .service-nav .item-link {
   padding: 4px 16px;
+  border: 1px solid #efefef;
 }
 .service-nav .item-link:hover {
   border-radius: 4px;
@@ -1561,6 +1565,29 @@ div.short-line {
   border-radius: 4px;
   border: 1px solid #ccc;
   background: #fafafa;
+}
+.service-nav .nav2-qq {
+  color: #ffffff;
+  background-color: #5a84de;
+  border-color: #5a84de;
+  background-image: -webkit-linear-gradient(-90deg, #5a84de 1%, #3064d6 100%);
+}
+.service-nav .nav2-qq svg {
+  width: 14px;
+  height: 14px;
+  vertical-align: middle;
+  position: relative;
+  top: -1px;
+  margin-right: 2px;
+  fill: #fff;
+}
+.service-nav .nav2-qq:hover,
+.service-nav .nav2-qq:focus,
+.service-nav .nav2-qq:active {
+  color: #ffffff;
+  background-color: #3064d6;
+  background-image: -webkit-linear-gradient(-90deg, #3064d6 1%, #5a84de 100%);
+  border-color: #2759c4;
 }
 @media (max-width: 768px) {
   .service-nav .item {
@@ -1718,26 +1745,6 @@ div.short-line {
   height: 23px;
   margin-right: 2px;
   vertical-align: middle;
-}
-.nav2-qq svg {
-  width: 14px;
-  height: 14px;
-  vertical-align: middle;
-  position: relative;
-  top: -1px;
-  margin-right: 2px;
-  fill: #9b9b9b;
-}
-.nav2-qq:hover,
-.nav2-qq:active,
-.nav2-qq:visited {
-  color: #fff;
-  background: #5a84de !important;
-}
-.nav2-qq:hover svg,
-.nav2-qq:active svg,
-.nav2-qq:visited svg {
-  fill: #fff;
 }
 .scale-img {
   transition: all 1s;

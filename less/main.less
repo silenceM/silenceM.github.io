@@ -110,6 +110,7 @@ div.short-line {
   }
   .item-link {
     padding: 4px 16px;
+    border: 1px solid #efefef;
     &:hover {
       border-radius: 4px;
       border: 1px solid #ccc;
@@ -120,6 +121,18 @@ div.short-line {
     border-radius: 4px;
     border: 1px solid #ccc;
     background: #fafafa;
+  }
+  .nav2-qq {
+    svg {
+      width: 14px;
+      height: 14px;
+      vertical-align: middle;
+      position: relative;
+      top: -1px;
+      margin-right: 2px;
+      fill: #fff;
+    }
+    .buttonColor(#fff, #5a84de, #5a84de);
   }
   @media (max-width: 768px) {
     .item {
@@ -216,26 +229,6 @@ div.short-line {
     height: 23px;
     margin-right: 2px;
     vertical-align: middle;
-  }
-}
-.nav2-qq {
-  svg {
-    width: 14px;
-    height: 14px;
-    vertical-align: middle;
-    position: relative;
-    top: -1px;
-    margin-right: 2px;
-    fill: #9b9b9b;
-  }
-  &:hover,
-  &:active,
-  &:visited {
-    color: #fff;
-    background: #5a84de !important;
-    svg {
-      fill: #fff;
-    }
   }
 }
 .scale-img {
