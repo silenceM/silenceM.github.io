@@ -1123,9 +1123,12 @@ text-decoration:none .contact-display .block a:link {
     width: 80%;
   }
 }
+.weiqing-contact-formbtn {
+  padding-top: 88px;
+  margin-left: 20px;
+}
 .weiqing-caseshow-card {
   text-align: center;
-  border: 1px solid #f1f1f1;
   background: #fff;
   padding-top: 85px;
   padding-bottom: 55px;
@@ -1797,4 +1800,13 @@ div.short-line {
 .drop-btn {
   padding: 6px 12px;
   margin-top: 5px;
+  color: #7f7f7f;
+  border: 1px solid #dcdcdc;
+  background-image: -webkit-linear-gradient(90deg, #ededed 0%, #fefefe 100%);
+}
+.public-dropdown {
+  min-width: 93px;
+}
+.public-dropdown > li > a {
+  padding: 3px 18px;
 }
