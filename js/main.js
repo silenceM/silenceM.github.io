@@ -13,4 +13,5 @@ $(document).ready(function(){
   });
   new WOW().init();
   $('#test').popover();
+  $('.carousel').carousel()
 });
