@@ -265,6 +265,16 @@ footer .footer-bottom {
   border-radius: 8px;
   overflow: hidden;
 }
+.weiqing-caseshow-list > div {
+  border-right: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
+}
+.weiqing-caseshow-list > div:nth-of-type(4n) {
+  border-right: none;
+}
+.weiqing-caseshow-list > div:nth-of-type(n+5) {
+  border-bottom: none;
+}
 .weiqing-about-wraper {
   background: #fff;
   padding-top: 110px;
@@ -1108,7 +1118,7 @@ text-decoration:none .contact-display .block a:link {
 }
 .weiqing-caseshow-card:hover .weiqing-caseshow-class {
   opacity: 0;
-  height: 0;
+  transform: translate3d(0, -100%, 0);
   margin-bottom: 0;
   overflow: hidden;
 }
@@ -1153,6 +1163,12 @@ text-decoration:none .contact-display .block a:link {
   border-radius: 8px;
   border: 1px solid #dcdcdc;
   overflow: hidden;
+}
+.weiqing-casepage-wraper > div {
+  border-right: 1px solid #dcdcdc;
+}
+.weiqing-casepage-wraper > div:last-child {
+  border-right: none;
 }
 .weiqing-casepage-detail {
   background: #fff;

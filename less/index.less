@@ -98,6 +98,16 @@
     border: 1px solid #e6e6e6;
     border-radius: 8px;
     overflow: hidden;
+    &>div {
+      border-right: 1px solid #e6e6e6;
+      border-bottom: 1px solid #e6e6e6;
+    }
+    &>div:nth-of-type(4n){
+      border-right: none;
+    }
+    &>div:nth-of-type(n+5) {
+      border-bottom: none;
+    }
   }
 }
 .weiqing-about {
