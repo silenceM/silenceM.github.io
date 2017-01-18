@@ -280,15 +280,37 @@ div.short-line {
     }
   }
   .drop-btn {
-    padding: 6px 12px;
-    margin-top: 5px;
+    padding: 9px 20px;
     color: #7f7f7f;
     border: 1px solid rgb(220, 220, 220);
     background-image: -webkit-linear-gradient( 90deg, rgb(237,237,237) 0%, rgb(254,254,254) 100%);
+    svg {
+      width: 14px;
+      height: 14px;
+      vertical-align: middle;
+      margin-left: 8px;
+      transform: rotate(180deg);
+      transition: all 1s ease;
+    }
   }
   .public-dropdown {
-    min-width: 93px;
+    min-width: 120px;
     &>li>a {
-      padding: 3px 18px;
+      &.active {
+        position: relative;
+        color: #5377ff;
+        &:after {
+          position: absolute;
+          width: 22px;
+          height: 22px;
+          content: '';
+          background: url(../img/对号.svg) no-repeat;
+          background-size: 100%;
+        }
+      }
+      padding: 9px 22px;
     }
+  }
+  .panel-body {
+    padding: 0;
   }

@@ -739,10 +739,6 @@ footer .footer-bottom {
 .search-fee p {
   text-align: left;
 }
-.about {
-  padding: 40px;
-  padding-top: 0;
-}
 .about hr {
   height: 1px;
   border: none;
@@ -895,35 +891,6 @@ footer .footer-bottom {
 .marketWeb-point table td {
   padding: 10px;
 }
-.pay {
-  padding: 40px;
-  padding-top: 0;
-}
-.pay-nav {
-  padding-bottom: 20px;
-}
-@media (max-width: 34em) {
-  .pay-nav .item {
-    float: none;
-  }
-}
-@media (min-width: 48em) {
-  .pay-nav .item:last-child {
-    float: right;
-  }
-}
-.pay-nav .link {
-  color: #4c4c4c;
-  padding: 5px 15px;
-}
-.pay-nav .block {
-  border-radius: 4px;
-  border: 1px solid #ccc;
-  background: #fafafa;
-}
-.pay-nav .active {
-  color: #0079dd;
-}
 .pay-display {
   background-color: #fff;
   border-radius: 10px;
@@ -990,35 +957,6 @@ text-decoration:none .pay-display .introduce a:link {
 .pay-display .introduce .pay-btn-small {
   width: 100%;
   margin-top: 50px;
-}
-.contact {
-  padding: 40px;
-  padding-top: 0;
-}
-.contact-nav {
-  padding-bottom: 20px;
-}
-@media (max-width: 34em) {
-  .contact-nav .item {
-    float: none;
-  }
-}
-@media (min-width: 48em) {
-  .contact-nav .item:last-child {
-    float: right;
-  }
-}
-.contact-nav .link {
-  color: #4c4c4c;
-  padding: 5px 15px;
-}
-.contact-nav .block {
-  border-radius: 4px;
-  border: 1px solid #ccc;
-  background: #fafafa;
-}
-.contact-nav .active {
-  color: #0079dd;
 }
 .contact-display {
   padding: 0 70px;
@@ -1260,7 +1198,7 @@ text-decoration:none .contact-display .block a:link {
   right: -8px;
 }
 .weiqing-newsdetail-content {
-  max-width: 700px;
+  max-width: 750px;
   margin: 0 auto;
   text-align: center;
   padding-top: 80px;
@@ -1284,6 +1222,11 @@ text-decoration:none .contact-display .block a:link {
 .weiqing-newsdetail-pagination span {
   color: #006ac7;
 }
+.weiqing-newsdetail-lastpage:hover,
+.weiqing-newsdetail-nextpage:hover {
+  cursor: pointer;
+  color: #006ac7;
+}
 .weiqing-share {
   text-align: left;
   font-size: 18px;
@@ -1293,9 +1236,30 @@ text-decoration:none .contact-display .block a:link {
 .weiqing-share span {
   padding: 0 5px;
 }
-.weiqing-share img {
+.weiqing-share .qq {
+  fill: #ff0038;
+}
+.weiqing-share .qq:hover {
+  fill: #990022;
+}
+.weiqing-share .weixin {
+  fill: #00c73d;
+}
+.weiqing-share .weixin:hover {
+  fill: #00611e;
+}
+.weiqing-share .weibo {
+  fill: #006ac7;
+}
+.weiqing-share .weibo:hover {
+  fill: #003461;
+}
+.weiqing-share svg {
   width: 30px;
   height: 30px;
+  vertical-align: middle;
+  transition: all 1s;
+  cursor: pointer;
 }
 .weiqing-observe-des {
   margin-bottom: 50px;
@@ -1398,7 +1362,7 @@ text-decoration:none .contact-display .block a:link {
   box-shadow: 0px 0px 2px 0px #dcdcdc;
 }
 .weiqing-jobs-title h4 {
-  margin-top: 14px;
+  margin: 11px;
 }
 .weiqing-jobs-column {
   margin-bottom: 0;
@@ -1798,15 +1762,37 @@ div.short-line {
   transition: all 1s;
 }
 .drop-btn {
-  padding: 6px 12px;
-  margin-top: 5px;
+  padding: 9px 20px;
   color: #7f7f7f;
   border: 1px solid #dcdcdc;
   background-image: -webkit-linear-gradient(90deg, #ededed 0%, #fefefe 100%);
 }
+.drop-btn svg {
+  width: 14px;
+  height: 14px;
+  vertical-align: middle;
+  margin-left: 8px;
+  transform: rotate(180deg);
+  transition: all 1s ease;
+}
 .public-dropdown {
-  min-width: 93px;
+  min-width: 120px;
 }
 .public-dropdown > li > a {
-  padding: 3px 18px;
+  padding: 9px 22px;
+}
+.public-dropdown > li > a.active {
+  position: relative;
+  color: #5377ff;
+}
+.public-dropdown > li > a.active:after {
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  content: '';
+  background: url(../img/对号.svg) no-repeat;
+  background-size: 100%;
+}
+.panel-body {
+  padding: 0;
 }
