@@ -385,6 +385,30 @@ footer .footer-bottom {
 .weiqing-contact-right span {
   color: #999;
 }
+.weiqing-contact-mapwraper {
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.33);
+  padding: 16px;
+  display: inline-block;
+  position: relative;
+}
+.weiqing-contact-mapwraper:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 96px;
+  background: rgba(255, 255, 255, 0.9);
+  -webkit-filter: blur(10px);
+  /* Chrome, Opera */
+  -moz-filter: blur(10px);
+  -ms-filter: blur(10px);
+  filter: blur(10px);
+  transition: all 1s;
+}
+.weiqing-contact-mapwraper:hover:after {
+  opacity: 0;
+}
 .weiqing-contact-content {
   background: #fff;
   border-radius: 4px;
@@ -559,6 +583,7 @@ footer .footer-bottom {
 }
 .service-fees {
   padding: 100px 50px;
+  text-align: center;
 }
 .service-icon {
   display: inline-block;
@@ -1519,16 +1544,30 @@ ul.tablist {
   list-style: none;
   text-align: center;
   padding: 0;
+  border-radius: 8px;
+  border: 1px solid #e8e8e8;
+  overflow: hidden;
+  display: inline-block;
 }
 ul.tablist li {
   width: 125px;
   display: inline-block;
   padding: 12.5px 20px;
-  border: 1px solid #e8e8e8;
-  background: linear-gradient(#ffffff, #f6f6f6);
+  border-right: 1px solid #e8e8e8;
+  background-image: -webkit-linear-gradient(-90deg, #ffffff 0%, #f6f6f6 99%);
 }
 ul.tablist li.active {
   background: linear-gradient(#f1f1f1, #fafafa);
+}
+ul.tablist li.active a {
+  color: #4c4c4c;
+}
+ul.tablist li a {
+  text-decoration: none;
+  color: #c0c0c0;
+}
+ul.tablist > li:last-child {
+  border-right: none;
 }
 hr.nav {
   border-top: 2px solid #999;
@@ -1830,4 +1869,16 @@ div.short-line {
 }
 .panel-body {
   padding: 0;
+}
+.public-tabwraper {
+  border-radius: 8px;
+  border: 1px solid #e8e8e8;
+  overflow: hidden;
+  display: inline-block;
+}
+.public-tabwraper li {
+  border-right: 1px solid #e8e8e8;
+}
+.public-tabwraper > li:last-child {
+  border-right: none;
 }

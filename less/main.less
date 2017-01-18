@@ -68,15 +68,29 @@ ul.tablist {
   list-style: none;
   text-align: center;
   padding: 0;
+  border-radius: 8px;
+  border: 1px solid #e8e8e8;
+  overflow: hidden;
+  display: inline-block;
   li {
     width: 125px;
     display: inline-block;
     padding: 12.5px 20px;
-    border: 1px solid #e8e8e8;
-    background: linear-gradient(#fff, #f6f6f6);
+    border-right: 1px solid #e8e8e8;
+    background-image: -webkit-linear-gradient( -90deg, rgb(255,255,255) 0%, rgb(246,246,246) 99%);
     &.active {
       background: linear-gradient(#f1f1f1, #fafafa);
+      a {
+        color: #4c4c4c;
+      }
     }
+    a {
+      text-decoration: none;
+      color: #c0c0c0;
+    }
+  }
+  &>li:last-child {
+    border-right: none;
   }
 }
 
@@ -314,4 +328,16 @@ div.short-line {
   }
   .panel-body {
     padding: 0;
+  }
+  .public-tabwraper {
+    border-radius: 8px;
+    border: 1px solid #e8e8e8;
+    overflow: hidden;
+    display: inline-block;
+    li {
+      border-right: 1px solid #e8e8e8;
+    }
+    &>li:last-child {
+      border-right: none;
+    }
   }
