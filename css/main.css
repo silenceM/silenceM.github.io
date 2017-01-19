@@ -28,7 +28,7 @@
   padding: 26px 0;
   margin-left: 0 !important;
 }
-@media screen (max-width: 768px) {
+@media (max-width: 768px) {
   .navbar-brand {
     padding-left: 20px;
   }
@@ -166,6 +166,11 @@ footer hr {
 }
 footer .footer-bottom {
   padding: 0;
+}
+@media (max-width: 768px) {
+  footer .footer-bottom {
+    padding: 0 20px;
+  }
 }
 .weiqing-main {
   text-align: center;
@@ -1380,6 +1385,14 @@ text-decoration:none .contact-display .block a:link {
 .weiqing-observe-content a:hover {
   text-decoration: none;
 }
+.weiqing-pagination-wraper {
+  text-align: center;
+}
+.weiqing-pagination-wraper span {
+  margin-left: 18px;
+  display: inline-block;
+  vertical-align: middle;
+}
 .mailLink {
   display: inline-block !important;
   color: #0079dd!important;
@@ -1883,4 +1896,19 @@ div.short-line {
 }
 .popover.bottom {
   margin-top: 20px;
+}
+.weiqing-pagination {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  vertical-align: middle;
+}
+.weiqing-pagination li.active a {
+  background-image: none;
+}
+.weiqing-pagination > li > a {
+  color: #666666;
+  background-image: -webkit-linear-gradient(90deg, #ededed 0%, #fafafa 100%);
+}
+.weiqing-pagination > li > a:hover {
+  color: inherit;
 }

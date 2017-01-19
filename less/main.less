@@ -343,3 +343,22 @@ div.short-line {
   .popover.bottom {
     margin-top: 20px;
   }
+  .weiqing-pagination {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    vertical-align: middle;
+    li {
+      &.active {
+        a {
+          background-image: none;
+        }
+      }
+    }
+    &>li>a {
+      color: #666666;  
+      background-image: -webkit-linear-gradient( 90deg, rgb(237,237,237) 0%, rgb(250,250,250) 100%);
+      &:hover {
+        color: inherit;
+      }
+    }
+  }
