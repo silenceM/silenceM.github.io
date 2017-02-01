@@ -29,14 +29,19 @@
   &-left {
     padding-left: 0;
     padding-right: 0;
+    @media(max-width: 767px) {
+      text-align: center;
+    }
   }
   &-image {
-
     height: 507px;
     background-image: url(../img/banner.png);
     background-position: right bottom;
     background-size: 700px;
     background-repeat: no-repeat;
+    @media(max-width: 767px) {
+      background-position: center;
+    }
   }
   &-background {
     position: absolute;
@@ -51,12 +56,19 @@
   .wraperPadding;
 }
 .weiqing-serve-list {
+  @media (max-width: 767px) {
+    & > div {
+      border-right: none !important;
+      border-bottom: none !important;
+    }
+  }
   & >div:nth-of-type(1), & >div:nth-of-type(2), & >div:nth-of-type(4), & >div:nth-of-type(5) {
     border-right: 1px solid #dcdcdc;
   }
   & >div:nth-of-type(1), & >div:nth-of-type(2), & >div:nth-of-type(3) {
     border-bottom: 1px solid #dcdcdc;
   }
+
 }
 .serve-card {
   &-wrap {
@@ -65,6 +77,9 @@
     min-height: 300px;
     display: table;
     transition:all 0.2s linear ;
+    @media(max-width: 767px) {
+      width: 50%;
+    }
     &:hover {
       box-shadow: rgb(237, 237, 237) 0px 0px 40px inset;
       .serve-card-description {
@@ -95,6 +110,9 @@
   .wraperPadding;
   }
   &-list {
+    @media (max-width: 767px) {
+      margin: 0 20px;
+    }
     border: 1px solid #e6e6e6;
     border-radius: 8px;
     overflow: hidden;

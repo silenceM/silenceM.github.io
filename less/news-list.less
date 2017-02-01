@@ -6,12 +6,23 @@
     overflow: hidden;
     background: #fff;
     text-align: center;
-    padding:54px 120px 90px;
+    padding:54px 0px 90px;
+    @media (max-width: 767px) {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
     h1 {
       font-weight: 300;
+      padding-left: 20px;
+      padding-right: 20px;
     }
     p {
       color: #999999;
+      padding-left: 20px;
+      padding-right: 20px;
+      max-width: 750px;
+      margin-left: auto;
+      margin-right: auto;
     }
   }
   &-list {
@@ -20,6 +31,10 @@
     border: 1px solid #dcdcdc;
     background: #fff;
     margin-bottom: 48px;
+    @media (max-width: 767px) {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
   }
   &-listtitle {
     background: #f4f4f4;
@@ -28,6 +43,10 @@
   }
   &-content {
     ul {
+      @media (max-width: 767px) {
+        padding-left:  20px;
+        padding-right: 20px;
+      }
       padding-left: 0;
       padding-left: 70px;
       padding-right: 70px;
