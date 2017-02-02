@@ -12,7 +12,10 @@ module.exports = function(grunt) {
         less: {
             expanded: {
                 options: {
-                    paths: ["css"]
+                    paths: ["css"],
+                    plugins: [
+                      new (require('less-plugin-autoprefix'))({browsers: ["last 2 versions", "ie 8"]})
+                    ]
                 },
                 files: {
                     "css/<%= pkg.name %>.css": "less/<%= pkg.name %>.less"
@@ -66,6 +69,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-less');
     grunt.loadNpmTasks('grunt-banner');
     grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-autoprefixer');
 
     // Default task(s).
     grunt.registerTask('default', ['uglify', 'less', 'usebanner']);
