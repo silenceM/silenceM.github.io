@@ -86,15 +86,31 @@
 </footer>
 
 <!-- jQuery -->
-<script src="{{ "/js/jquery.min.js " | prepend: site.baseurl }}"></script>
+<script src="{{ "js/jquery.min.js " | prepend: site.baseurl }}"></script>
 
 <!-- Bootstrap Core JavaScript -->
-<script src="{{ "/js/bootstrap.min.js " | prepend: site.baseurl }}"></script>
+<script src="{{ "js/bootstrap.min.js " | prepend: site.baseurl }}"></script>
 
 <!-- Custom Theme JavaScript -->
-<script src="{{ "/js/main.min.js " | prepend: site.baseurl }}"></script>
-<script src="//cdn.bootcss.com/wow/1.1.2/wow.min.js"></script>
-<script src="//cdn.bootcss.com/retina.js/2.1.0/retina.min.js"></script>
+<script src="https://cdn.bootcss.com/wow/1.1.2/wow.min.js"></script>
+<script src="https://cdn.bootcss.com/retina.js/2.1.0/retina.min.js"></script>
 <script type="text/javascript">
   retinajs();
+  $(document).ready(function(){
+  $('.gif-img').each(function(){
+    var $el = $(this)
+    var src = $el.find('img').attr('src');
+    $el.hover(
+      function(){
+        $(this).find('img').attr("src", src.replace('.png', '.gif'));
+      },
+      function(){
+        $(this).find('img').attr("src", src);
+      });
+  });
+  new WOW().init();
+  $('#test').popover();
+  $('.carousel').carousel()
+});
+
 </script>

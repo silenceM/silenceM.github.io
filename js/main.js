@@ -1,4 +1,3 @@
-console.log('test')
 $(document).ready(function(){
   $('.gif-img').each(function(){
     var $el = $(this)
