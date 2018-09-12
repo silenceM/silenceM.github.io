@@ -17,5 +17,5 @@ per_page: 0
 theme: navy
 deploy:
   type: git
+  branch: master
   repo: https://github.com/silenceMMM/pycon-website.git
-  branch: 
