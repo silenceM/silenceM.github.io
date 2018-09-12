@@ -18,4 +18,4 @@ theme: navy
 deploy:
   type: git
   branch: master
-  repo: https://github.com/silenceMMM/pycon-website.git
+  repo: https://github.com/silenceMMM/silenceMMM.github.io.git
