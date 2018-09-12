@@ -14,7 +14,9 @@
   <meta name="msapplication-TileColor" content="#2f83cd">
   <meta name="msapplication-TileImage" content="{{ url_for('icon/mstile-144x144.png') }}">
   <meta name="generator" content="Hexo {{ hexo_version() }}">
+
   <!-- CSS -->
   <!-- build:css build/css/navy.css -->
+  <link href="https://cdn.bootcss.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
   {{ css('css/navy') }}
 </head>

@@ -4,10 +4,14 @@ logo-size = 50px
 
 #header
   position: relative
-  padding: header-padding-normal 0
+  background: #FFDE6C
   @media print
     display: none
-  // background-color: #FFDE6C
+.navbar-expand-lg .navbar-nav .nav-link
+  color: #25415E
+  font-weight: bold
+  padding-left: 25px
+  padding-right: 25px
 #header-inner
   display: flex
   flex-flow: row nowrap
@@ -46,28 +50,6 @@ logo-size = 50px
     opacity: 1
     color: color-link-hover
 
-#search-input-wrap
-  display: none
-  padding-left: 6px
-  padding-bottom: 8px
-  border-bottom: 1px solid color-gray
-  &.on
-    display: inline-block
-
-#search-input-icon
-  color: #fff
-  padding-right: 0.5em
-  display: inline-block
-  opacity: 0.7
-
-#search-input
-  background: none
-  font-size: inherit
-  font-family: font-title
-  color: #fff
-  outline: none
-  -webkit-appearance: none
-
 #lang-select-wrap
   display: none
   position: relative
@@ -75,10 +57,12 @@ logo-size = 50px
     display: block
 
 #lang-select-label
-  color: #fff
+  color: #25415E
+  font-weight: bold
   opacity: 0.7
   font-family: font-title
-  line-height: logo-size
+  padding-top: .5rem
+  padding-bottom: .5rem
   span
     padding-left: 8px
   i
@@ -93,3 +77,10 @@ logo-size = 50px
   height: 100%
   -webkit-appearance: menulist-button
   font-size: inherit
+#banner
+  background-image: url('/assets/cqm_banner.png')
+  background-repeat: no-repeat
+  background-size: cover
+  background-position: center
+  height: 574px;
+  width: 100%;
