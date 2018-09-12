@@ -17,6 +17,7 @@ per_page: 0
 theme: navy
 deploy:
   type: git
+  branch: gh-pages
   repo: https://github.com/silenceMMM/silenceMMM.github.io.git
 
 highlight:
