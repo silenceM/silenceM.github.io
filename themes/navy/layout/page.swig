@@ -32,7 +32,7 @@
       <div class="right">
         <img class="topimg" src="/assets/hibeijing.png" />
         <button class="btn btn-blue">点我买票</button>
-        <img class="bottomimg" src="/assets/beijingIcon.png" />
+        <img class="bottomimg" src="/assets/iconBeijing.png" />
       </div>
     </div>
   </div>

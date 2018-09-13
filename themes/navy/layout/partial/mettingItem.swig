@@ -2,18 +2,18 @@
   <div class="left">
     <div class="leftContent">
       <div class="name">{{name}}</div>
-      <p>活动时间：{{mettingDate}}</p>
-      <p>活动地址：{{address}}</p>
-      <p>XXXXXX 特性专场 | XXXX特性专场 | 女性专场</p>
+      <p>{{mettingDate}}</p>
+      <p>{{address}}</p>
+      <p>{{zhuanChang}}</p>
     </div>
     <!-- <img src={{rightImg}} alt=""> -->
   </div>
   <div class="right">
-    <a href="">
-      <button class="btn btn-blue">查看详细信息</button>
+    <a href={{detailUrl}}>
+      <button class="btn btn-blue">{{__('d3_schedule_right_btn.chaKanXiangXiXinXi')}}</button>
     </a>
-    <a href="">
-      <button class="btn btn-blue">我要买票</button>
+    <a href={{buyTicketUrl}}>
+      <button class="btn btn-blue">{{__('d3_schedule_right_btn.woYaoMaiPiao')}}</button>
     </a>
   </div>
 </div>

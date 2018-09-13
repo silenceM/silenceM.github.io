@@ -5,50 +5,51 @@
     <div>{{__('index.get_started')}}</div>
   -->
 
-  {{ partial('partial/title', { titleName: '大会日程' }) }}
+  {{ partial('partial/title', { titleName: __('cqm_title.s1_daHuiRicheng') }) }}
   <div class="metting-list">
     {{ partial('partial/mettingItem', { 
-      name: '北京',
-      mettingDate: '2018.10.14',
-      address: '北京市XXXXXXXXXXXX大酒店',
+      name: __('d3_schedule_single_bj.diDian'),
+      mettingDate: __('d3_schedule_single_bj.shiJian'),
+      address: __('d3_schedule_single_bj.diZhi'),
       rightImg: '/assets/beijingIcon.png',
-      detailUrl: 'www.baidu.com',
-      buyTicketUrl: 'www.baidu.com',
+      zhuanChang: __('d3_schedule_single_bj.diZhi'),
+      detailUrl: 'https://www.baidu.com',
+      buyTicketUrl: 'https://www.baidu.com',
      })}}
-     {{ partial('partial/mettingItem', { 
-      name: '北京',
-      mettingDate: '2018.10.14',
-      address: '北京市XXXXXXXXXXXX大酒店',
+     {{ partial('partial/mettingItem', {
+      name: __('d3_schedule_single_sh.diDian'),
+      mettingDate: __('d3_schedule_single_sh.shiJian'),
+      address: __('d3_schedule_single_sh.diZhi'),
       rightImg: '/assets/beijingIcon.png',
-      detailUrl: 'www.baidu.com',
-      buyTicketUrl: 'www.baidu.com',
+      detailUrl: 'https://www.baidu.com',
+      buyTicketUrl: 'https://www.baidu.com',
      })}}
-     {{ partial('partial/mettingItem', { 
-      name: '北京',
-      mettingDate: '2018.10.14',
-      address: '北京市XXXXXXXXXXXX大酒店',
+     {{ partial('partial/mettingItem', {
+      name: __('d3_schedule_single_sz.diDian'),
+      mettingDate: __('d3_schedule_single_sz.shiJian'),
+      address: __('d3_schedule_single_sz.diZhi'),
       rightImg: '/assets/beijingIcon.png',
-      detailUrl: 'www.baidu.com',
-      buyTicketUrl: 'www.baidu.com',
+      detailUrl: 'https://www.baidu.com',
+      buyTicketUrl: 'https://www.baidu.com',
      })}}
-     {{ partial('partial/mettingItem', { 
-      name: '北京',
-      mettingDate: '2018.10.14',
-      address: '北京市XXXXXXXXXXXX大酒店',
+     {{ partial('partial/mettingItem', {
+      name: __('d3_schedule_single_cd.diDian'),
+      mettingDate: __('d3_schedule_single_cd.shiJian'),
+      address: __('d3_schedule_single_cd.diZhi'),
       rightImg: '/assets/beijingIcon.png',
-      detailUrl: 'www.baidu.com',
-      buyTicketUrl: 'www.baidu.com',
+      detailUrl: 'https://www.baidu.com',
+      buyTicketUrl: 'https://www.baidu.com',
      })}}
-     {{ partial('partial/mettingItem', { 
-      name: '北京',
-      mettingDate: '2018.10.14',
-      address: '北京市XXXXXXXXXXXX大酒店',
+     {{ partial('partial/mettingItem', {
+      name: __('d3_schedule_single_hz.diDian'),
+      mettingDate: __('d3_schedule_single_hz.shiJian'),
+      address: __('d3_schedule_single_hz.diZhi'),
       rightImg: '/assets/beijingIcon.png',
-      detailUrl: 'www.baidu.com',
-      buyTicketUrl: 'www.baidu.com',
+      detailUrl: 'https://www.baidu.com',
+      buyTicketUrl: 'https://www.baidu.com',
      })}}
   </div>
-  {{ partial('partial/title', { titleName: '往届回顾' }) }}
+  {{ partial('partial/title', { titleName: __('cqm_title.s1_wangJieHuiGu') }) }}
   <div class="reviewWraper"> 
     <div class="reviewItem">
       <img src="/assets/d4_history_img01.png" alt="">
@@ -76,21 +77,16 @@
       <p>PyConChina</p>
     </div>
   </div>
-  {{ partial('partial/title', { titleName: '合作支持' }) }}
+  {{ partial('partial/title', { titleName: __('cqm_title.s1_heZuoZhiChi') }) }}
   <div class="supportWraper">
     <div class="row">
+    {% set productCount = 16 %}
+    {% set productCountAsArray = Array(productCount) %}
+    {% for x, y in productCountAsArray %}
       <div class="col-sm-6 col-md-4 col-lg-3" >
-          <img src="/assets/d5_friendship_single01.png" alt="">
-        </div>
-        <div class="col-sm-6 col-md-4 col-lg-3" >
-            <img src="/assets/d5_friendship_single01.png" alt="">
-        </div>
-        <div class="col-sm-6 col-md-4 col-lg-3" >
-            <img src="/assets/d5_friendship_single01.png" alt="">
-        </div>
-        <div class="col-sm-6 col-md-4 col-lg-3" >
-            <img src="/assets/d5_friendship_single01.png" alt="">
-        </div>
+        <img src='/assets/support_{{ x + 1}}.png' />
+      </div>
+    {% endfor %}
     </div>
   </div>
 </div>

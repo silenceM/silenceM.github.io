@@ -11,26 +11,23 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#">首页</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">2018</a>
+            <a class="nav-link" href="#">{{__('py_nav.shouYe')}}</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              大会日程
+             {{__('py_nav.daHuiRiCheng')}} 
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">北京站 10.14</a>
-              <a class="dropdown-item" href="#">上海站 10.21</a>
-              <a class="dropdown-item" href="#">深圳站 10.27</a>
-              <a class="dropdown-item" href="#">成都 10.27</a>
-              <a class="dropdown-item" href="#">杭州 11.04</a>
+              <a class="dropdown-item" href="#">{{__('py_nav.beiJing')}}</a>
+              <a class="dropdown-item" href="#">{{__('py_nav.shangHai')}}</a>
+              <a class="dropdown-item" href="#">{{__('py_nav.shenZhen')}}</a>
+              <a class="dropdown-item" href="#">{{__('py_nav.chengDu')}}</a>
+              <a class="dropdown-item" href="#">{{__('py_nav.hangZhou')}}</a>
             </div>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              往届回顾
+             {{__('py_nav.wangJieHuiGu')}}
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
               <a class="dropdown-item" href="#">2017</a>
@@ -43,16 +40,16 @@
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">相关资讯</a>
+            <a class="nav-link" href="#">{{__('py_nav.xiangGuanZiXun')}}</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">组委 & 志愿者</a>
+            <a class="nav-link" href="#">{{__('py_nav.zuWeiJiZhiYuanZhe')}}</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">讲师</a>
+            <a class="nav-link" href="#">{{__('py_nav.jiangShi')}}</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">赞助</a>
+            <a class="nav-link" href="#">{{__('py_nav.zanZhu')}}</a>
           </li>
           <div id="lang-select-wrap" class="my-2 my-lg-0">
             <label id="lang-select-label"><i class="fa fa-globe"></i><span>{{ lang_name(page.lang) }}</span></label>
