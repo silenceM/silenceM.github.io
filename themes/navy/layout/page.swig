@@ -28,6 +28,7 @@
               分会场4: Python 女性专场<br/>
             </p>
         </div>
+        <button class="btn btn-blue" >我要参加</button>
       </div>
       <div class="right">
         <img class="topimg" src="/assets/hibeijing.png" />
@@ -105,35 +106,7 @@
         </div>
     </div>
   </div>
-  {{ partial('partial/title', { titleName: '合作支持' })}}
-  <div class="supportWraper">
-    <div class="row">
-      <div class="col-sm-6 col-md-4 col-lg-3" >
-          <img src="/assets/d5_friendship_single01.png" alt="">
-        </div>
-        <div class="col-sm-6 col-md-4 col-lg-3" >
-            <img src="/assets/d5_friendship_single01.png" alt="">
-        </div>
-        <div class="col-sm-6 col-md-4 col-lg-3" >
-            <img src="/assets/d5_friendship_single01.png" alt="">
-        </div>
-        <div class="col-sm-6 col-md-4 col-lg-3" >
-            <img src="/assets/d5_friendship_single01.png" alt="">
-        </div>
-        <div class="col-sm-6 col-md-4 col-lg-3" >
-            <img src="/assets/d5_friendship_single01.png" alt="">
-          </div>
-          <div class="col-sm-6 col-md-4 col-lg-3" >
-              <img src="/assets/d5_friendship_single01.png" alt="">
-          </div>
-          <div class="col-sm-6 col-md-4 col-lg-3" >
-              <img src="/assets/d5_friendship_single01.png" alt="">
-          </div>
-          <div class="col-sm-6 col-md-4 col-lg-3" >
-              <img src="/assets/d5_friendship_single01.png" alt="">
-          </div>
-    </div>
-  </div>
+  {{ partial('partial/support') }}
   {{ partial('partial/title', { titleName: '蟒人赞助' })}}
   <div class="personalWraper">
     <div class="personalItem">

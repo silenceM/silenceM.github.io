@@ -19,6 +19,8 @@
         margin-bottom: 38px
       .content
         font-size: 20px
+      .btn
+        display: none
     .right
       width: calc(100% - 784px)
       height: inherit
@@ -35,6 +37,19 @@
         bottom 90px
         left: 50%
         transform: translate(-50%, 0)
+  @media(max-width: 1200px)
+    .agendaItem
+      height: auto
+      .left
+        border: none
+        width: auto
+        padding: 15px
+        .btn
+          display: block
+          margin: 0 auto
+          margin-top: 10px
+    .right
+      display: none
 .topicWraper
   margin-top: 24px
 .volunteerWraper
