@@ -1,17 +1,21 @@
 <div class="topicItem">
   <div class="left">
-    <img src="/assets/avatar.png" alt="">
-    <div class="name">洪强宁</div>
-    <div class="title">爱因互动创始人兼CTO</div>
+    <img src="/assets/lecturer_{{avatar}}.png" alt="">
+    <div class="name">{{name}}</div>
+    <div class="title">{{title}}</div>
   </div>
   <div class="right">
-    <div class="rightTitle">演讲主题 / Topic</div>
+    <div class="rightTitle">演讲主题</div>
     <div class="topicName">
-      我的 Python 之路
+      {{topicName}}
     </div>
-    <div class="rightTitle">演讲主题简述 / Summary</div> 
+    <div class="rightTitle">主题简介</div>
     <div class="summary">
-      The topic I want to give a speech is about the comparison between a non-Pythonic way and a Pythonic way of approaching business problems. As I switched from a business side to a technical field, I have experienced how two sides differ in solving business problems. I will cover about the actual problem I had to solve on FC Network Analysis using K-Means and how pro Excel users would approach this problem.
+      {{topicSummary}}
+    </div>
+    <div class="rightTitle">讲师简介</div>
+    <div class="summary">
+      {{lecturerSummary}}
     </div>
   </div>
 </div>

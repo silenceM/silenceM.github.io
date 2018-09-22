@@ -1,10 +1,15 @@
+.metting-description
+  background-color: #ffde6c
+  border-radius: 5px
+  padding: 46px
+  p
+    margin-bottom: 30px
 .agendaWraper
   margin-top: 24px
   margin-bottom: 24px
   .agendaItem
     background: #FFDE6C
     display: flex
-    height: 784px
     .left
       padding-left: 60px
       padding-top: 30px
@@ -19,6 +24,20 @@
         margin-bottom: 38px
       .content
         font-size: 20px
+        ul
+          li:first-child
+            float: left
+        .detailWraper
+          padding-left: 50px
+          font-size: 18px
+          .time
+            margin-right: 15px
+            float: left
+            & + div
+              padding-left: 115px
+        &-section
+          margin-bottom: 20px
+          line-height: 28px
       .btn
         display: none
     .right
@@ -74,5 +93,5 @@
     text-align: center
     color: #fff
     margin-bottom 40px
-  
+
       

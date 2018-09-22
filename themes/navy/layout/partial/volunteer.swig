@@ -1,12 +1,12 @@
 <div class="volunteerItem">
-  <img src="/assets/avatar.png" alt="">
+  <img src="/assets/{{avatar}}.png" alt="">
   <div class="name">
-    ALIN
+    {{name}}
   </div>
   <div class="title">
-    北京站 | 组委
+    {{voltitle}}
   </div>
   <div class="description">
-    PYTHON程序员/BALABALAB
+    {{description}}
   </div>
 </div>
