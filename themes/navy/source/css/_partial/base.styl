@@ -60,6 +60,10 @@ body
   text-align: center;
   width: 182px;
   font-size: 20px
+  @media(max-width: 768px)
+    font-size: 15px
+    padding: 9px
+    width: auto
 .btn-yellow 
   color: #25415E
   background-color: #FFDE6C
@@ -73,6 +77,13 @@ body
     font-size: 50px
     color: #FFDE6C
     margin-right: 20px
+  @media(max-width: 768px)
+    flex-direction: row-reverse
+    justify-content: center
+    img
+      width: 40px
+    .text
+      font-size: 20px
 .mettingItem
   margin-bottom: 24px
   background-color:#FFDE6C
@@ -92,12 +103,26 @@ body
       background-repeat: no-repeat
       background-position: right center
       background-size: 400px auto
+      @media(max-width: 1200px)
+        background-image: none !important
       p
         margin-bottom: 10px
         max-width: 400px
       .name
         font-size: 60px
         margin-bottom: 39px
+    .shanghai
+      background-size: auto 100%
+      background-image: url('/assets/shanghaiIcon.png')
+    .shenzhen
+      background-size: 378px auto
+      background-image: url('/assets/shenzhenIcon.png') 
+    .chengdu
+      background-size: 394px auto
+      background-image: url('/assets/chengduIcon.png')
+    .hangzhou
+      background-size: 419px auto
+      background-image: url('/assets/hangzhouIcon.png')
   .right
     height 100%
     padding: 50px 0
@@ -105,23 +130,46 @@ body
     display: flex
     flex-direction: column
     justify-content: space-between
-    padding-left: 30px
+    padding-left: 72px
     border-left: 2px dashed #224160
+  .m_right
+    display: none
+  @media(max-width: 768px)
+    height: auto
+    padding: 12px
+    border-radius: 10px
+    .left
+      padding: 0
+      .leftContent
+        min-height: auto
+        .name
+          font-size: 15px
+          margin-bottom: 10px
+    .right
+      display: none
+    .m_right
+      display: block
+      padding-left: 15px
+      img
+        width: 14px
 .yellow
   color: #FFDE6C
 .topicItem
   width: 100%
-  height: 420px
+  min-height: 420px
   display: flex
   align-items: center
   color: #224160
   background-color: #FFDE6C
   margin-bottom: 18px
+  padding: 15px
   .left
     padding-left: 92px
     padding-right: 58px
     text-align: center
     border-right: 1px solid #224160
+    img
+      width: 190px
     .name
       font-size: 30px
       margin: 20px 0
@@ -132,12 +180,35 @@ body
     padding-right: 70px
     .rightTitle
       color: #999999
-      margin-bottom: 5px
+      margin-bottom: 10px
+      font-size: 20px
     .topicName
       font-size: 30px
       margin-bottom: 35px
     .summary
-      font-size: 20px
+      font-size: 18px
+      margin-bottom: 20px
+  @media(max-width: 768px)
+    flex-direction: column
+    height: auto
+    .left
+      border: none
+      padding: 0
+      .name
+        font-size: 20px
+        margin: 10px 0
+      .title
+        font-size: 12px
+    .right
+      padding: 0
+      text-align: center
+      margin-top: 15px
+      .topicName
+        font-size: 16px
+        margin-bottom: 16px
+      .summary
+        font-size: 14px
+        text-align: left
 .volunteerItem
   max-width: 300px
   height: 420px
@@ -149,6 +220,10 @@ body
   background-color: #FFDE6C
   color: #224160
   margin-bottom 30px
+  margin-left: auto
+  margin-right: auto
+  img
+    width: 190px
   .name 
     font-size: 30px
     margin-top: 35px

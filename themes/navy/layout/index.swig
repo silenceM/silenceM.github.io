@@ -7,16 +7,18 @@
 
   {{ partial('partial/title', { titleName: __('cqm_title.s1_daHuiRicheng') }) }}
   <div class="metting-list">
-    {{ partial('partial/mettingItem', { 
+    {{ partial('partial/mettingItem', {
+      enName: 'beijing',
       name: __('d3_schedule_single_bj.diDian'),
       mettingDate: __('d3_schedule_single_bj.shiJian'),
       address: __('d3_schedule_single_bj.diZhi'),
       rightImg: '/assets/beijingIcon.png',
-      zhuanChang: __('d3_schedule_single_bj.diZhi'),
+      zhuanChang: __('d3_schedule_single_bj.zhuanChang'),
       detailUrl: 'https://www.baidu.com',
       buyTicketUrl: 'https://www.baidu.com',
      })}}
      {{ partial('partial/mettingItem', {
+       enName: 'shanghai',
       name: __('d3_schedule_single_sh.diDian'),
       mettingDate: __('d3_schedule_single_sh.shiJian'),
       address: __('d3_schedule_single_sh.diZhi'),
@@ -25,6 +27,7 @@
       buyTicketUrl: 'https://www.baidu.com',
      })}}
      {{ partial('partial/mettingItem', {
+      enName: 'shenzhen',
       name: __('d3_schedule_single_sz.diDian'),
       mettingDate: __('d3_schedule_single_sz.shiJian'),
       address: __('d3_schedule_single_sz.diZhi'),
@@ -33,6 +36,7 @@
       buyTicketUrl: 'https://www.baidu.com',
      })}}
      {{ partial('partial/mettingItem', {
+      enName: 'chengdu',
       name: __('d3_schedule_single_cd.diDian'),
       mettingDate: __('d3_schedule_single_cd.shiJian'),
       address: __('d3_schedule_single_cd.diZhi'),
@@ -41,6 +45,7 @@
       buyTicketUrl: 'https://www.baidu.com',
      })}}
      {{ partial('partial/mettingItem', {
+      enName: 'hangzhou',
       name: __('d3_schedule_single_hz.diDian'),
       mettingDate: __('d3_schedule_single_hz.shiJian'),
       address: __('d3_schedule_single_hz.diZhi'),
@@ -77,16 +82,5 @@
       <p>PyConChina</p>
     </div>
   </div>
-  {{ partial('partial/title', { titleName: __('cqm_title.s1_heZuoZhiChi') }) }}
-  <div class="supportWraper">
-    <div class="row">
-    {% set productCount = 16 %}
-    {% set productCountAsArray = Array(productCount) %}
-    {% for x, y in productCountAsArray %}
-      <div class="col-sm-6 col-md-4 col-lg-3" >
-        <img src='/assets/support_{{ x + 1}}.png' />
-      </div>
-    {% endfor %}
-    </div>
-  </div>
+  {{ partial('partial/support') }}
 </div>

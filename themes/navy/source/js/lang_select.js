@@ -7,7 +7,7 @@
     var lang = this.value;
     var canonical = this.dataset.canonical;
     var path = '/';
-    if (lang !== 'en') path += lang + '/';
+    if (lang !== 'zh-cn') path += lang + '/';
 
     Cookies.set('nf_lang', lang, { expires: 365 });
     location.href = path + canonical;

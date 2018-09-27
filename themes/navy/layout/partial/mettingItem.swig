@@ -1,6 +1,6 @@
 <div class="mettingItem">
   <div class="left">
-    <div class="leftContent">
+    <div class="leftContent {{enName}}">
       <div class="name">{{name}}</div>
       <p>{{mettingDate}}</p>
       <p>{{address}}</p>
@@ -15,5 +15,8 @@
     <a href={{buyTicketUrl}}>
       <button class="btn btn-blue">{{__('d3_schedule_right_btn.woYaoMaiPiao')}}</button>
     </a>
+  </div>
+  <div class="m_right">
+    <img src="/assets/m_btn_enter@2x.png" />
   </div>
 </div>
