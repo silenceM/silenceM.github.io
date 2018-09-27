@@ -4,7 +4,6 @@
 <!-- build:js build/js/main.js -->
 {{ js('js/lang_select') }}
 {{ js('js/toc') }}
-{{ js('js/mobile_nav') }}
 <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdn.bootcss.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 <!-- endbuild -->
