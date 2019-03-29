@@ -1,5 +1,7 @@
 global-reset()
-
+mobile-center()
+  @media(max-width: 768px)
+    justify-content: center
 html
   box-sizing: border-box
 
@@ -26,7 +28,7 @@ html, body
     // overflow: hidden
 
 body
-  background: #224160
+  background: #FFFFFF
   font-size: font-size
   font-family: font-sans
   color: color-default
@@ -64,175 +66,205 @@ body
     font-size: 15px
     padding: 9px
     width: auto
-.btn-yellow 
-  color: #25415E
-  background-color: #FFDE6C
 .btn-blue
-  color: #FFDE6C
-  background-color: #224160
-.title-wraper
-  display: flex
-  align-items: center
-  .text
-    font-size: 50px
-    color: #FFDE6C
-    margin-right: 20px
+  color: #ffffff
+  background-color: #0045FF
+.btn-orange
+  color: #FFF
+  background-color: #FF9000
+
+.support
+  background: #FFF
+  padding-top: 100px;
+  padding-bottom: 147px;
   @media(max-width: 768px)
-    flex-direction: row-reverse
-    justify-content: center
-    img
-      width: 40px
+    padding-top: 50px;
+    padding-bottom: 73px;
+
+.title-wraper
+  width: 280px
+  height 118px
+  text-align: center;
+  margin: 0 auto
+  font-size: 36px
+  color: #FFFFFF
+  background-image: url('/assets/images/btn_bg_blue.png')
+  background-size: cover
+  background-repeat: no-repeat
+  @media(max-width: 768px)
+    width: 140px
+    height 59px
+    font-size: 18px
     .text
+      padding-top: 11px !important
+  .text
+    padding-top: 22px
+
+&.white-title
+    background-image: url('/assets/images/btn_bg_white.png')
+    .text
+      color: #0C104C
+.description
+  padding-top: 160px
+  padding-bottom: 143px
+  @media(max-width: 768px)
+    padding-top: 80px
+    padding-bottom: 71px
+  .content
+    font-size: 22px
+    max-width: 1000px
+    margin: 0 auto
+    margin-top: 47px
+    line-height: 32px
+    @media(max-width: 768px)
+      font-size: 16px
+      padding: 0 15px
+    p
+      text-indent: 2em
+      margin-bottom 22px
+  .btn
+    display: block
+    margin: 0 auto
+.producer
+  padding-top: 115px
+  padding-bottom: 143px
+  background-color: #F2F2F2
+  @media(max-width: 768px)
+    padding-top: 57px
+    padding-bottom: 71px
+  &-content
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    margin-top: 52px
+    mobile-center()
+  &-wraper
+    text-align: center
+    min-width: 250px
+    margin-top: 16px
+    img
+      width: 150px
+      height 150px
+    .name
       font-size: 20px
-.mettingItem
-  margin-bottom: 24px
-  background-color:#FFDE6C
-  color: #224160
+      color: #333333
+      margin-top: 18px
+      margin-bottom: 9px
+    .des
+      color: #333333
+      font-size: 14px
+.speaker
+  padding-top: 102px
+  padding-bottom: 73px
+  text-align: center;
+  @media(max-width: 768px)
+    padding-top: 51px
+    padding-bottom: 36px
+  .join-text
+    color: #0C104C
+    font-size: 26px
+    margin-top: 73px
+    margin-bottom: 44px
+    @media(max-width: 768px)
+      font-size: 16px
+.schedule
+  background: #0A0C48
+  padding-top: 138px
+  padding-bottom: 114px
+  text-align: center
+  @media(max-width: 768px)
+    padding-top: 80px
+    padding-bottom: 57px
+.ticket
+  padding-top: 59px
+  padding-bottom: 76px
+  text-align: center
+.ticketList
   display: flex
   justify-content: space-between
-  height: 280px;
-  align-items: center
-  .left
-    padding-left: 62px
-    padding-right: 54px
+  flex-wrap: wrap
+  margin-top: 86px
+  margin-bottom: 90px
+  @media(max-width: 768px)
+    justify-content: center
+.tickerWraper
+  color #FFF
+  font-size 14px
+  width 271px
+  min-height 356px
+  background-image url('/assets/images/piaojia_bg.png')
+  background-repeat: no-repeat
+  background-size 100%
+  padding: 0 38px
+  position relative
+  .type
     text-align: left
-    width: 100%
-    .leftContent
-      min-height: 224px
-      background-image: url('/assets/beijingIcon.png')
-      background-repeat: no-repeat
-      background-position: right center
-      background-size: 400px auto
-      @media(max-width: 1200px)
-        background-image: none !important
-      p
-        margin-bottom: 10px
-        max-width: 400px
-      .name
-        font-size: 60px
-        margin-bottom: 39px
-    .shanghai
-      background-size: auto 100%
-      background-image: url('/assets/shanghaiIcon.png')
-    .shenzhen
-      background-size: 378px auto
-      background-image: url('/assets/shenzhenIcon.png') 
-    .chengdu
-      background-size: 394px auto
-      background-image: url('/assets/chengduIcon.png')
-    .hangzhou
-      background-size: 419px auto
-      background-image: url('/assets/hangzhouIcon.png')
-  .right
-    height 100%
-    padding: 50px 0
-    padding-right: 78px
-    display: flex
-    flex-direction: column
-    justify-content: space-between
-    padding-left: 72px
-    border-left: 2px dashed #224160
-  .m_right
-    display: none
-  @media(max-width: 768px)
-    height: auto
-    padding: 12px
-    border-radius: 10px
-    .left
-      padding: 0
-      .leftContent
-        min-height: auto
-        .name
-          font-size: 15px
-          margin-bottom: 10px
-    .right
-      display: none
-    .m_right
-      display: block
-      padding-left: 15px
-      img
-        width: 14px
-.yellow
-  color: #FFDE6C
-.topicItem
-  width: 100%
-  min-height: 420px
-  display: flex
-  align-items: center
-  color: #224160
-  background-color: #FFDE6C
-  margin-bottom: 18px
-  padding: 15px
-  .left
-    padding-left: 92px
-    padding-right: 58px
-    text-align: center
-    border-right: 1px solid #224160
-    img
-      width: 190px
-    .name
-      font-size: 30px
-      margin: 20px 0
-    .title
-      font-size: 20px
-  .right
-    padding-left: 50px
-    padding-right: 70px
-    .rightTitle
-      color: #999999
-      margin-bottom: 10px
-      font-size: 20px
-    .topicName
-      font-size: 30px
-      margin-bottom: 35px
-    .summary
+    position absolute
+    top: 26px
+    left: 60px
+  .price
+    font-size 60px
+    border-bottom: 1px solid #FFF
+    padding-top: 68px
+    padding-bottom: 30px
+    span
       font-size: 18px
-      margin-bottom: 20px
-  @media(max-width: 768px)
-    flex-direction: column
-    height: auto
-    .left
-      border: none
-      padding: 0
-      .name
-        font-size: 20px
-        margin: 10px 0
-      .title
-        font-size: 12px
-    .right
-      padding: 0
-      text-align: center
-      margin-top: 15px
-      .topicName
-        font-size: 16px
-        margin-bottom: 16px
-      .summary
-        font-size: 14px
-        text-align: left
-.volunteerItem
-  max-width: 300px
-  height: 420px
+  .ticketNote
+    text-align left
+    ul
+      line-height: 22px
+      margin-top 16px
+      list-style circle
+      padding-left 16px
+.volunteer
+  background: #0A0C48
+  padding-top: 89px
+  padding-bottom: 61px
+.location
+  background: #F2F2F2
+  padding-top: 80px
+  padding-bottom: 144px
+.locationWraper
+  margin-top 70px
   display: flex
-  justify-content: center
+  justify-content: space-between
   align-items: center
-  flex-direction: column
+  flex-wrap: wrap
+  @media(max-width: 768px)
+    justify-content: center
+    .left, .right
+      width: 100% !important
+    .left
+      padding-right: 0 !important
+      min-width: auto !important
+  .left, .right
+    font-size: 14px
+    width: 50%
+  .left
+    padding-right: 76px
+    color: #333
+    min-width: 476px
+    .title
+      color: #0C104C
+      font-size: 26px
+      margin-bottom: 24px
+    .content
+      line-height: 26px
+      margin-bottom: 30px
+  .right
+    position relative
+    height 300px
+    overflow hidden
+    iframe
+      position absolute
+      top: 0
+      left: 0
+      width: 100%
+      height 100%
+.comming
+  margin-top: 20px
+  margin-bottom: 20px
+  font-size: 28px
   text-align: center
-  background-color: #FFDE6C
-  color: #224160
-  margin-bottom 30px
-  margin-left: auto
-  margin-right: auto
-  img
-    width: 190px
-  .name 
-    font-size: 30px
-    margin-top: 35px
-    margin-bottom: 20px
-  .title
-    font-size: 20px
-    margin-bottom 20px
-  .description
+  @media(max-width: 768px)
     font-size: 16px
-    color: #999
-    max-width: 250px
-    margin: 0 auto

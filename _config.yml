@@ -1,4 +1,4 @@
-title: PyConChina
+title: 前端开发者大会
 subtitle: ""
 description: ""
 author: silence
@@ -9,4 +9,4 @@ theme: navy
 deploy:
   type: git
   branch: master
-  repo: https://github.com/silenceMMM/silenceMMM.github.io.git
+  repo: git@github.com:silenceM/silenceM.github.io.git

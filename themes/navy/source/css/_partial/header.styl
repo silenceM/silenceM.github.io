@@ -4,11 +4,11 @@ logo-size = 50px
 
 #header
   position: relative
-  background: #FFDE6C
+  background: #000000
   @media print
     display: none
 .navbar-expand-lg .navbar-nav .nav-link
-  color: #25415E
+  color: #FFF
   font-weight: bold
   padding-left: 25px
   padding-right: 25px
@@ -78,12 +78,43 @@ logo-size = 50px
   -webkit-appearance: menulist-button
   font-size: inherit
 #banner
-  background-image: url('/assets/cqm_banner.png')
+  position relative
+  background-image: url('/assets/images/banner_bg.png')
   background-repeat: no-repeat
-  background-size: cover
-  background-position: center
-  height: 574px;
-  width: 100%;
+  background-size: 100%
+  background-position: top
+  height: 867px
+  width: 100%
+  background-color: #0A0C47;
+  text-align: center
   @media(max-width: 768px)
-    background-image: url('/assets/m_banner@2x.png')
+    background-color: #0A0C47
+    background-image: none
+    img
+      width: 100%
     height: calc(100vh - 95px)
+  .bannerContent
+    position absolute
+    padding-top 147px
+    top: 0
+    left: 50%
+    transform: translate(-50%, 0)
+    color: #FFF
+    font-weight: bold
+    div:nth-child(1)
+      font-size: 80px
+    div:nth-child(2)
+      font-size: 60px
+      margin: 36px 0
+    div:nth-child(3)
+      font-size: 30px
+    @media(max-width: 768px)
+      position relative
+      padding-top: 70px
+      div:nth-child(1)
+        font-size: 40px
+      div:nth-child(2)
+        font-size: 30px
+        margin: 18px 0
+      div:nth-child(3)
+        font-size: 15px

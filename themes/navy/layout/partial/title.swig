@@ -1,4 +1,3 @@
-<div class="title-wraper">
-  <div class="text">{{ titleName }}</div>
-  <img src="/assets/cqm_title_img.png" alt="">
+<div class="title-wraper {% if isWhite %}white-title{% endif %}">
+  <div class="text" >{{ titleName }}</div>
 </div>
