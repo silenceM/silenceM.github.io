@@ -21,9 +21,19 @@
         {% endfor %}
       </div>
   </section>
-  <section class="speaker" id="speaker" >
+  <section class="container speaker" id="speaker" >
     {{ partial('partial/title',
       { titleName: __('演讲嘉宾') }) }}
+      <div class="speakerList">
+        {% for item in page.fe_speaker %}
+          <div class="speakerWraper">
+            <img src="{{item.avatar}}" alt="">
+            <div class="name">{{item.name}}</div>
+            <div class="title">{{item.title}}</div>
+            <div class="introduction">{{item.introduction}}</div>
+          </div>
+        {% endfor %}
+      </div>
       <div class="comming">敬请期待</div>
       <p class="join-text" >欢迎加入我们，分享更多有趣主题</p>
   <a target="_blank" href="https://jinshuju.net/f/F1z00R" >

@@ -157,6 +157,45 @@ body
   padding-top: 102px
   padding-bottom: 73px
   text-align: center;
+  .speakerList
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    mobile-center()
+    .speakerWraper
+      width: 242px
+      height: 326px
+      margin: 0 20px
+      color: #333
+      background-color: rgb(240, 240, 240)
+      display: flex
+      align-items center
+      flex-direction column
+      justify-content: center
+      margin-bottom 30px
+      &:hover
+        background-color: #0A0C48
+        color: #fff
+        &>img
+          display: none
+        &>.name
+          margin-bottom: 50px
+        &> .title
+          display: none
+        &>.introduction
+          display: block
+      img
+        width: 150px
+      .name
+        font-size 26px
+        margin-top 24px
+        margin-bottom 11px
+      .title
+        font-size 14px
+      .introduction
+        display: none
+        padding: 0 18px
+        line-height: 26px
   @media(max-width: 768px)
     padding-top: 51px
     padding-bottom: 36px

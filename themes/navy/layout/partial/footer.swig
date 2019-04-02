@@ -6,7 +6,7 @@
     <div class="middle">
       <div class="middleLeft">
         <div class="title">
-         <a href="mailto:cynthiaxin1@gmail.com" >联系我们</a>
+         <a href="mailto:cynthiaxin1@gmail.com" >联系我们: Cynthia Xin 185 1609 4658</a>
         </div>
         <div class="title">支持团队</div>
         <div class="content">
@@ -26,6 +26,6 @@
         </div>
       </div>
     </div>
-    <div class="bottom">copyright 2018</div>
+    <div class="bottom">copyright @focon2019</div>
   </div>
 </footer>
