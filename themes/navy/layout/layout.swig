@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang }}">
 {{ partial('partial/head') }}
-<body>
+<body ontouchstart="">
   {{ partial('partial/header') }}
   <div id="container">
     {{ body }}
