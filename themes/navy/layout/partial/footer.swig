@@ -26,6 +26,6 @@
         </div>
       </div>
     </div>
-    <div class="bottom">copyright @focon2019</div>
+    <div class="bottom">Copyright@FDCon2019</div>
   </div>
 </footer>
