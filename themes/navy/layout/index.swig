@@ -47,7 +47,7 @@
        })
     }}
     <div class="comming" style="color: #fff">敬请期待</div>
-    <a target="_blank" href="https://www.huodongxing.com/event/4484449110911" >
+    <a target="_blank" href="https://www.bagevent.com/event/2497313?bag_track=bagevent#website_moduleId_249388" >
       <button class="btn btn-orange">{{__('立即购票')}}</button>
     </a>
   </section>
@@ -71,7 +71,7 @@
           </div>
         {% endfor %}
     </div>
-    <a target="_blank" href="https://www.huodongxing.com/event/4484449110911" >
+    <a target="_blank" href="https://www.bagevent.com/event/2497313?bag_track=bagevent#website_moduleId_249388" >
       <button class="btn btn-orange">{{__('立即购票')}}</button>
     </a>
   </section>

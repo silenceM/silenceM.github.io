@@ -11,7 +11,7 @@
     <a target="_blank" href="https://jinshuju.net/f/G2P03U" >
       <button class="btn btn-blue">{{__('fe_button.shenqingzhiyuanzhe')}}</button>
     </a>
-    <a target="_blank" href="https://www.huodongxing.com/event/4484449110911" >
+    <a target="_blank" href="https://www.bagevent.com/event/2497313?bag_track=bagevent#website_moduleId_249388" >
       <button class="btn btn-orange">{{__('fe_button.lijigoupiao')}}</button>
     </a>
   </div>
