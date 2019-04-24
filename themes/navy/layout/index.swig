@@ -46,7 +46,39 @@
         isWhite: true
        })
     }}
-    <div class="comming" style="color: #fff">敬请期待</div>
+    <div class="scheduleWraper">
+     {% for item in page.fe_agender %}
+      <div class="scheduleItem">
+        <div class="place">{{item.placeName}}</div>
+        <div class="scheduleTopic">{{item.placeTopic}}</div>
+        <div class="scheduleTime">{{item.time}}</div>
+        <div class="scheduleHost">{{item.host}}</div>
+        {% for topicItem in item.topicList %}
+          <div class="topicItemWraper">
+            <div class="itemTime">{{topicItem.time}}</div>
+            <div class="itemTitle">{{topicItem.topicTitle}}</div>
+            <div class="itemName">{{topicItem.topicName}}</div>
+          </div>
+        {% endfor %}
+      </div>
+     {% endfor %}
+
+    </div>
+    <div class="topicWraper container">
+      {% for item in page.fe_topic %}
+        <div class="topicContent">
+          <div class="top">{{item.topicTitle}}</div>
+          <div class="middle">
+            <img src="{{item.avatar}}" alt="">
+            <div class="info">
+              <div class="name">{{item.name}}</div>
+              <div class="title">{{item.title}}</div>
+            </div>
+          </div>
+          <div class="bottom">{{item.topicContent}}</div>
+        </div>
+      {% endfor %}
+    </div>
     <a target="_blank" href="https://www.bagevent.com/event/2497313?bag_track=bagevent#website_moduleId_249388" >
       <button class="btn btn-orange">{{__('立即购票')}}</button>
     </a>

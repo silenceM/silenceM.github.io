@@ -214,6 +214,46 @@ body
   @media(max-width: 768px)
     padding-top: 80px
     padding-bottom: 57px
+  .scheduleItem
+    color: #FFF
+    font-size: 14px
+    margin-bottom 60px
+    .place
+      font-size: 32px
+      font-weight: 400
+    .scheduleTopic
+      font-size: 20px
+      margin-top 16px
+      margin-bottom 16px
+    .scheduleHost
+      margin-top: 14px
+      margin-bottom 55px
+    .topicItemWraper
+      display: flex
+      justify-content: space-between
+      align-items: center
+      margin: 0 auto
+      padding-bottom: 12px
+      text-align: left
+      max-width: 700px
+      margin: 0 auto
+      @media(max-width: 768px)
+        width: 100%
+        flex-direction: column
+      .itemTime
+        font-size: 14px
+      .itemTitle
+        font-size: 22px
+        min-width: 480px
+        text-align: center
+        @media(max-width: 768px)
+          margin-top: 14px
+          margin-bottom 14px
+          min-width: auto
+      .itemName
+        font-size: 14px
+        color: #999
+      
 .ticket
   padding-top: 59px
   padding-bottom: 76px
@@ -255,6 +295,44 @@ body
       margin-top 16px
       list-style circle
       padding-left 16px
+.topicWraper
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+  mobile-center()
+  .topicContent
+    background-color: #ffffff
+    border-radius: 6px
+    max-width: 300px
+    // height: 400px
+    padding: 28px 28px 43px;
+    margin-right 20px
+    margin-bottom 20px
+    .top
+      font-size: 26px
+      font-weight: 400
+      text-align: left
+      word-break: break-all
+      line-height: 30px
+      min-height 90px
+    .middle
+      display: flex
+      align-items: center
+      margin-top: 14px
+      margin-bottom 20px
+      img
+        width: 44px
+      .info
+        text-align: left
+        margin-left 11px
+        font-size: 14px
+        color: #999999
+        line-height: 20px
+    .bottom
+      color: #666666
+      font-size: 14px
+      line-height: 20px
+      text-align: left
 .volunteer
   background: #0A0C48
   padding-top: 89px
