@@ -34,7 +34,6 @@
           </div>
         {% endfor %}
       </div>
-      <div class="comming">敬请期待</div>
       <p class="join-text" >欢迎加入我们，分享更多有趣主题</p>
   <a target="_blank" href="https://jinshuju.net/f/F1z00R" >
     <button class="btn btn-blue">{{__('申请演讲')}}</button>
@@ -121,7 +120,6 @@
           电话：18516094658
         </div>
         <div class="title">参会提示</div>
-        <div class="content">敬请期待</div>
       </div>
       <div class="right">
         <iframe width="500" height="300" frameborder='0' scrolling='no' marginheight='0' marginwidth='0' src='http://f.amap.com/36rAZ_05E6WBH'></iframe>'
