@@ -52,7 +52,7 @@
         <div class="place">{{item.placeName}}</div>
         <div class="scheduleTopic">{{item.placeTopic}}</div>
         <div class="scheduleTime">{{item.time}}</div>
-        <div class="scheduleHost">{{item.host}}</div>
+        <div class="scheduleHost">主持人：</div>
         {% for topicItem in item.topicList %}
           <div class="topicItemWraper">
             <div class="itemTime">{{topicItem.time}}</div>
