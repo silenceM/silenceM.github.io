@@ -80,7 +80,11 @@ body
   @media(max-width: 768px)
     padding-top: 50px;
     padding-bottom: 73px;
-
+  .supportContent
+    text-align: center
+    img
+      max-width: 180px
+      height 85px
 .title-wraper
   width: 280px
   height 118px
@@ -228,6 +232,9 @@ body
     .scheduleHost
       margin-top: 14px
       margin-bottom 55px
+      @media(max-width: 768px)
+        margin-top: 8px
+        margin-bottom 27px
     .topicItemWraper
       display: flex
       justify-content: space-between
@@ -240,6 +247,11 @@ body
       @media(max-width: 768px)
         width: 100%
         flex-direction: column
+        border: 1px solid #fff;
+        border-radius: 8px;
+        padding: 12px;
+        width: 90%;
+        margin-bottom 20px
       .itemTime
         font-size: 14px
       .itemTitle
@@ -250,6 +262,7 @@ body
           margin-top: 14px
           margin-bottom 14px
           min-width: auto
+          font-size: 18px
       .itemName
         font-size: 14px
         color: #999
@@ -303,6 +316,7 @@ body
   .topicContent
     background-color: #ffffff
     border-radius: 6px
+    min-width 300px
     max-width: 300px
     // height: 400px
     padding: 28px 28px 43px;

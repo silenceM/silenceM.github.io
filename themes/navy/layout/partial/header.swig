@@ -5,7 +5,7 @@
         <img src="/assets/images/logo.png"/>
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <img src="/assets/nav_btn_meun@2x.png" />
+        <img id="menu-icon" src="/assets/nav_btn_meun@2x.png" />
       </button>
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">

@@ -51,7 +51,7 @@
         <div class="place">{{item.placeName}}</div>
         <div class="scheduleTopic">{{item.placeTopic}}</div>
         <div class="scheduleTime">{{item.time}}</div>
-        <div class="scheduleHost">主持人：</div>
+        <div class="scheduleHost">{{item.host}}</div>
         {% for topicItem in item.topicList %}
           <div class="topicItemWraper">
             <div class="itemTime">{{topicItem.time}}</div>
@@ -120,6 +120,9 @@
           电话：18516094658
         </div>
         <div class="title">参会提示</div>
+        <!-- 
+        <div class="content"><a target="_blank" href="https://shimo.im/docs/Bzt8S40lIpkOjiP4" >参加 FDCon2019  的正确打开方式</a></div>
+        -->
       </div>
       <div class="right">
         <iframe width="500" height="300" frameborder='0' scrolling='no' marginheight='0' marginwidth='0' src='http://f.amap.com/36rAZ_05E6WBH'></iframe>'
